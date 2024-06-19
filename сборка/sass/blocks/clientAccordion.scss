@@ -1,0 +1,147 @@
+.clientAccordion{
+    .clientAcc__block{
+        font-family:'Montserrat', sans-serif;
+        .clientA__titles{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 75px;
+            .clientA_mainTitle{
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+        }
+        .clientA__accordion{
+            .accordion__item {
+                position: relative;
+                display: block;
+                border-radius: 25px;
+                margin-bottom: 20px;
+                background-color: #ffffff;
+                -webkit-box-shadow: 1px 0px 22px -16px #000;
+                -moz-box-shadow: 1px 0px 22px -16px #000;
+                box-shadow: 1px 0px 22px -16px #000;
+
+                @include sm {
+                    margin-bottom: 15px;
+                }
+
+                .acc__bg{
+                    display: block;
+                    width: 25px;
+                    height: 5px;
+                    border-radius: 5px;
+                    background-color: #4294ff;
+                    position: absolute;
+                    top: 50%;
+                    right: 5%;
+                    z-index: 2;
+                    rotate: 0deg;
+
+                    @include sm {
+                        width: 20px;
+                        height: 3px;
+                    }
+                }
+
+                .acc__bg02{
+                    display: block;
+                    width: 25px;
+                    height: 5px;
+                    border-radius: 5px;
+                    background-color: #4294ff;
+                    position: absolute;
+                    top: 50%;
+                    right: 5%;
+                    z-index: 2;
+                    rotate: 0deg;
+                    transition: all 0.3s ease;
+
+                    &.rotate{
+                        rotate: 90deg;
+                    }
+
+                    @include sm {
+                        width: 20px;
+                        height: 3px;
+                    }
+                }
+
+                & .accordion__title {
+                    position: relative;
+                    display: block;
+                    padding: 40px 0 40px 70px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-bottom: 2px;
+                    color: #000000;
+                    text-decoration: none;
+                    border-radius: 25px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+
+                    @include sm {
+                        padding: 30px 0 20px 30px;
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+
+                    @include xs {
+                        font-size: 11px;
+                        line-height: 16px;
+                        padding: 20px 0 20px 25px;
+                    }
+
+                    @include xxs {
+                        padding: 20px 40px 20px 25px;
+                    }
+                }
+
+                & .accordion-active {
+                    background-color: #ffffff;
+                }
+            }
+
+            .accordion__item .accordion__content {
+                margin-bottom: 2px;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 25px;
+                color: #515151;
+                padding: 0 250px 40px 70px;
+                display: none;
+
+                @include lg {
+                    padding: 0 120px 40px 70px;
+                }
+
+                @include sm {
+                    padding: 0 120px 40px 30px;
+                }
+
+                @include xs {
+                    font-size: 12px;
+                    line-height: 21px;
+                }
+
+                @include xxs {
+                    padding: 0 40px 40px 30px;
+                }
+
+                .accordion__short {
+                    font-size: 18px;
+                    padding-bottom: 20px;
+
+                    @include sm {
+                        font-size: 14px;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+}

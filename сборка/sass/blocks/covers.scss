@@ -1,0 +1,173 @@
+.covers{
+    margin-top: 120px;
+    margin-bottom: 77px;
+    font-family:'Montserrat', sans-serif;
+
+
+    @include sm {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .covers__block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .covers__main__title{
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .covers__main__subtitle{
+            margin-top: 20px;
+            margin-bottom: 0;
+
+            &:last-child{
+                margin-top: 0;
+            }
+
+            span{
+                font-weight: 700;
+            }
+        }
+
+        .covers__waves{
+            width: 50%;
+            margin: 28px 0;
+        }
+
+        .covers__select__block{
+            display: flex;
+            gap: 0 30px;
+            margin-top: 45px;
+            position: relative;
+            margin-bottom: 75px;
+
+            @include xs {
+                gap: 10px;
+                margin-top: 25px;
+                margin-bottom: 45px;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .box select {
+                background-color: #ffffff;
+                color: #505050;
+                width: 400px !important;
+                border-radius: 50px;
+                border: 2px solid #67a7ff;
+                font-size: 15px;
+                line-height: 25px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                outline: none;
+                cursor: pointer;
+                display: flex;
+                position: relative;
+                background: url(/img/chevron.png) no-repeat center right 15px;
+                height: 60px;
+                padding-left: 30px;
+
+                & select option {
+                    padding: 30px;
+                }
+
+                @include xxs {
+                    width: 290px !important;
+                }
+            }
+        }
+
+        .covers__examples{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 50px 100px;
+
+            @include md {
+                gap: 40px 75px;
+            }
+
+            @include sm {
+                gap: 40px 70px;
+            }
+
+            @include xs {
+                gap: 25px 50px;
+            }
+
+            .covers__item{
+                width: 20%;
+                height: 100%;
+                display: none;
+
+                &.visible{
+                    display: block;
+                }
+
+                @include lg {
+                    width: 25%;
+                }
+
+                @include xs {
+                    width: 40%;
+                }
+
+                .covers__item--img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .covers__links{
+            margin-top: 75px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @include xs {
+                margin-top: 30px;
+            }
+              
+            .covers__show__more{
+                font-size: 15px;
+                padding: 20px 65px;
+                text-decoration: none;
+                border: 2px solid #67a7ff;
+                border-radius: 40px;
+                margin-bottom: 40px;
+                width: 70%;
+
+                @include xs {
+                    margin-bottom: 20px;
+                    width: 100%;
+                }
+            }
+
+            .covers__mainbtn{
+                padding: 25px 65px;
+                border-radius: 40px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 25px;
+                color: white;
+
+                @include xs {
+                    padding: 15px 65px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

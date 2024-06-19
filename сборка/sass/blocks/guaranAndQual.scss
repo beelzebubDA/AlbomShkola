@@ -1,0 +1,119 @@
+.guaranAndQual{
+    .guaranAndQual__block{
+        padding-top: 140px;
+        padding-bottom: 135px;
+        font-family:'Montserrat', sans-serif;
+        font-weight: 400;
+        position: relative;
+
+        @include sm {
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
+
+        .gAq__block__bg{
+            position: absolute;
+            left: 220px;
+            top: 200px;
+        }
+        .gAq__titles{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .gAq__mainTitle{
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+
+
+            .gAq__span{
+                margin-bottom: 105px;
+
+                @include lg {
+                    margin-bottom: 70px;
+                }
+            }
+        }
+
+        .gAq__items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 110px;
+            padding-left: 50px;
+            position: relative;
+            z-index: 2;
+
+            @include lg {
+                gap: 0 40px;
+                padding-left: 25px;
+            }
+            
+            @include md {
+                padding-left: 0;
+            }
+
+            @include sm {
+                flex-direction: column;
+                gap: 40px 0;
+            }
+
+            .gAq__item{
+
+                &:nth-child(2){
+                    padding: 80px 65px 90px 65px;
+                    background-color: white;
+                    box-shadow: -4px 7px 20px 0 rgba(0,0,0,0.1);
+                    border-radius: 30px;
+                    text-align: center;
+
+                    @include md {
+                        padding: 35px 65px 45px;
+                    }
+                }
+
+                &:last-child{
+                    text-align: end;
+                }
+
+                .gAq__item--title{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-bottom: 30px;
+                    color: black;
+
+                    @include md {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+
+                    @include sm {
+                        font-size: 25px;
+                        line-height: 30px;
+                        text-align: center;
+                    }
+                }
+
+                .gAq__item--subtitle{
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #515151;
+
+                    @include md {
+                        font-size: 10px;
+                        line-height: 20px;
+                    }
+
+                    @include sm {
+                        font-size: 18px;
+                        line-height: 26px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

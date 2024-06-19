@@ -1,0 +1,494 @@
+.quiz{
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    @include lg {
+        padding-bottom: 50px;
+    }
+
+    @include md {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .quiz__block{
+        font-family:'Montserrat', sans-serif;
+        .quiz__mainTitle{
+            margin-bottom: 15px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .quiz__main__subtitle{
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        .quizz_block{
+            padding-bottom: 120px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            @include md {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 50px 0;
+            }
+
+            @include sm {
+                padding-bottom: 80px;
+            }
+
+            .quizz__quizzes{
+                max-width: 550px;
+                min-width: 550px;
+
+                @include lg {
+                    min-width: 470px;
+                    max-width: 470px;
+                }
+
+                @include xs {
+                    min-width: auto;
+                    width: 100%;
+                }
+                .quizz_progress{
+                    height: 40px;
+                    width: 100%;
+                    border-radius: 7px;
+                    position: relative;
+                    border: 2px solid #515151;
+                    overflow: hidden;
+
+                    .progress_status{
+                        position: absolute;
+                        height: 100%;
+                        width: 25%;
+                        background-color: rgb(196, 112, 112);
+                        transition: .3s all ease;
+                    }
+
+                    .progress__numb{
+                        position: absolute;
+                        top: 25%;
+                        left: 46%;
+                    }
+                }
+
+                .quizz_step{
+
+                    .quizz__step--card{
+
+                        .card-header{
+                            .card__question{
+                                font-size: 22px;
+                                text-align: center;
+
+                            }
+
+                        }
+
+                        .card-body{
+                            .card__body--variables{
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: flex-start;
+                                justify-content: space-between;
+                                padding-bottom: 50px;
+
+                                .card__variable--item04{
+                                    gap: 20px 0;
+                                    margin-bottom: 25px !important;
+                                }
+
+                                .yourOpinions {
+                                    width: 550px;
+                                    max-width: 550px;
+                                    outline: none;
+                                    overflow: hidden;
+                                    padding: 20px;
+                                    border-radius: 20px;
+                                    border: 1px solid #515151;
+
+                                    @include lg {
+                                        width: 470px;
+                                        height: 125px;
+                                    }
+
+                                    @include xs {
+                                        width: 100% !important;
+                                    }
+                                }
+
+                                .card__3--block__rel{
+                                    position: relative;
+                                    width: 100%;
+                                    height: 150px;
+
+                                    .card__3--block__abs{
+                                        position: absolute;
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        gap: 15px 0;
+    
+                                        .input__numbOfPupil{
+                                            width: 60%;
+                                            height: 40px;
+                                            outline: none;
+                                            border-radius: 10px;
+                                            padding-left: 15px;
+                                        }
+
+                                        .card__3--label{
+                                            display: flex;
+                                            gap: 0 10px;
+                                            align-items: center;
+                                        }
+                                    }
+
+                                }
+
+                                .variable__card{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 40px 0;
+                                }
+
+                                label {
+                                    display: flex;
+                                    align-items: center;
+                                }
+
+                                input {
+                                    width: 20px;
+                                    height: 20px;
+                                    margin-right: 10px;
+                                }
+                            }
+
+                        }
+
+                        .card-footer{
+                            text-align: center;
+
+                            .quizz_button{
+                                background-color: #3b8dff;
+                                display: inline-block;
+                                width: 70%;
+                                padding: 25px 0;
+                                color: white;
+                                font-size: 20px;
+                                border-radius: 15px;
+                                text-decoration: none;
+
+                                &:hover {
+                                    box-shadow: 0 9px 35px -17px #58acff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .quizz__R__info{
+                background: #ecf3f6;
+                padding: 30px 40px;
+                border-radius: 20px;
+                .quizz__R__block{
+                    .quizz__R__header{
+                        display: flex;
+                        gap: 0 20px;
+                        align-items: start;
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 110px;
+                            height: 110px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                            object-position: top;
+
+                        }
+
+                        .quizz__R__H--text{
+
+                        }
+                    }
+
+                    .quizz__R__body{
+
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px 0;
+                        margin-bottom: 30px;
+                        .quizz__R__B--text{
+
+                        }
+
+                        .quizz__R__B--text__Last{
+                            color: #515151;
+                        }
+                    }
+
+                    .quizz__R__footer{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px 0;
+
+                        .quizz__R__F__item{
+
+                            display: flex;
+                            gap: 0 20px;
+                            align-items: center;
+
+                            img{
+                                width: 100px;
+                            }
+
+                            .quizz__R__F__text{
+                                color: #515151;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .quiz__sides{
+            display: flex;
+            gap: 0 100px;
+            align-items: start;
+
+            @include lg {
+                gap: 0 70px;
+            }
+
+            @include md {
+                gap: 0 45px;
+            }
+
+            @include sm {
+                flex-direction: column;
+                align-items: center;
+                gap: 50px 0;
+            }
+
+            .quiz__L__side{
+                .quiz__L__block{
+                    display: inline-block;
+                    background: linear-gradient(90deg,#3b8dff,#7ed5ff);
+                    padding: 94px 98px 80px 105px;
+                    border-radius: 50px;
+
+                    @include xl {
+                        padding: 50px 60px 50px 50px;
+                    }
+
+                    @include lg {
+                        padding: 20px 40px 35px 35px;
+                    }
+
+                    @include xs {
+                        padding: 60px 90px 60px 90px;
+                    }
+
+                    @include xxs {
+                        padding: 40px 50px;
+                    }
+
+                    .quiz__L__title{
+                        font-size: 28px;
+                        line-height: 60px;
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight: 400;
+
+                        @include lg {
+                            font-size: 24px;
+                            line-height: 40px;
+                        }
+
+                        span{
+                            font-weight: 700;
+                            font-size: 40px;
+                            line-height: 45px;
+
+                            @include lg {
+                                font-size: 30px;
+                                line-height: 35px;
+                            }
+                        }
+                    }
+
+                    .quiz__L__subtitle{
+                        font-weight: 400;
+                        font-size: 28px;
+                        line-height: 35px;
+                        color: white;
+
+                        @include lg {
+                            font-size: 24px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+
+            .quiz__R__side{
+                position: relative;
+                .quiz__R--title{
+                    margin-top: 0;
+                    margin-bottom: 145px;
+
+                    @include lg {
+                        margin-bottom: 100px;
+                    }
+
+                    @include sm {
+                        text-align: center;
+                        margin-bottom: 60px;
+                    }
+
+                    @include xs {
+                        font-size: 16px;
+
+                        br {
+                            display: block;
+                        }
+                    }
+                }
+
+                .quiz__R__bg{
+                    position: absolute;
+                    top: -120px;
+                    left: -130px;
+
+                }
+
+                .parent__Reviews--slider{
+                    padding: 100px !important;
+                    z-index: 2;
+
+                    @include sm {
+                        padding: 60px !important;
+                        margin-left: 800px;
+                    }
+
+                    @include xs {
+                        margin-left: 1000px;
+                    }
+
+                    @include xxs {
+                        margin-left: 1325px;
+                    }
+                }
+
+                .parent__Reviews{
+                    display: flex;
+                    gap: 0px 40px !important;
+
+                    @include xs {
+                        align-items: center;
+                    }
+                    .parent__Rev__item{
+                        position: relative;
+                        padding: 45px 35px;
+                        border-radius: 50px;
+                        border: 1px solid #d6d9eb;
+                        display: inline-block;
+                        background: linear-gradient(52deg, #f7f1f9, #f7f1f9);
+                        z-index: 2;
+                        width: 13% !important;
+                        // height: auto !important;
+
+                        @include lg {
+                            padding: 35px 20px;
+                        }
+
+                        @include xs {
+                            width: 300px;
+                        }
+
+                        .parent__R--name{
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #515151;
+                            padding-bottom: 35px;
+                            padding-left: 150px;
+
+                            @include lg {
+                                padding-bottom: 25px;
+                                padding-left: 145px;
+                            }
+                        }
+                        .parent__R--title{
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #515151;
+                            font-weight: 700;
+                            padding-bottom: 25px;
+
+                            @include lg {
+                                font-size: 13px;
+                            }
+                        }
+
+                        .parent__R--reviews{
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #515151;
+                            padding-bottom: 30px;
+
+                            @include md {
+                                padding-bottom: 20px;
+                            }
+                        }
+
+                        .parent__R--lastp{
+                            font-size: 12px;
+                            line-height: 20px;
+                            font-style: italic;
+                        }
+
+                        .parent__img{
+                            position: absolute;
+                            top: -85px;
+                            left: 0;
+                            width: 170px;
+                            height: 180px;
+                            object-fit: cover;
+                            border-radius: 50px;
+
+                            @include lg {
+                                top: -55px;
+                                left: 0;
+                                width: 155px;
+                                height: 150px;
+                            }
+
+                        }
+
+                        .audio__Rec{
+                            position: absolute;
+                            bottom: -45px;
+                            left: -25px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.quizz_step{
+    display: none;
+}
+
+.quizz_step.active{
+    display: block;
+}

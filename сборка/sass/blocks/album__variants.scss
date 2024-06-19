@@ -1,0 +1,267 @@
+.album__variants{
+    .album__Var__block{
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 180px;
+        font-family:'Montserrat', sans-serif;
+
+        @include xs {
+            padding-bottom: 80px;
+        }
+
+        .album__var__scndTitle{
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 28px;
+            line-height: 40px;
+
+            @include md {
+                margin-bottom: 15px;
+            }
+        }
+
+        .album__Var__mainTitle{
+            font-size: 50px;
+            margin-bottom: 80px;
+
+            @include md {
+                font-size: 40px;
+                margin-bottom: 45px;
+            }
+        }
+
+        .album__var__items{
+            display: flex;
+            justify-content: center;
+            gap: 0 95px;
+
+            @include sm {
+                flex-direction: column;
+                gap:  50px 0;
+            }
+
+            .album__var__item__glob{
+                width: 35%;
+                z-index: 2;
+
+                @include xl {
+                    width: 40%;
+                }
+
+                @include lg {
+                    width: 50%;
+                }
+
+                @include sm {
+                    width: 100%;
+                }
+
+                .album__item__last__btn{
+                    text-decoration: none;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 30px;
+                    color: black;
+                    padding: 20px 75px;
+                    border: 2px solid #67a7ff;
+                    border-radius: 25px;
+
+                    @include xxl {
+                        font-size: 12px;
+                    }
+
+                    @include md{
+                        padding: 17px 20px;
+                    }
+
+                    @include sm {
+                        padding: 25px 100px;
+                    }
+
+                    @include xxs {
+                        padding: 20px 20px;
+                    }
+                }
+            }
+
+            .alb__var__item__02{
+                .album__var__item{
+                    background: linear-gradient(52deg, #9be4f3, #facee9);   
+
+                    .album__var__waves02{
+                        width: 60%;
+                        height: 7px;
+                        margin-bottom: 25px;
+
+                        @include xl {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+            .album__var__item{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 0 75px 0;
+                background-color: #eef2f6;
+                border-radius: 50px;
+                gap: 15px 0;
+                margin-bottom: 80px;
+
+                @include xxs {
+                    margin-bottom: 60px;
+                }
+
+                .album__var__item__img{
+                    width: 100%;
+                    border-radius: 50px;
+                }
+
+                .album__var__item--title{
+                    left: auto;
+                    top: 280px;
+                    position: absolute;
+                    font-weight: 700;
+                    font-size: 50px;
+                    line-height: 40px;
+                    color: white;
+                    z-index: 2;
+                    text-shadow: 24px 0 30px #4e4f53;
+
+                    @include xxl {
+                        top: 250px;
+                    }
+
+                    @include xl {
+                        top: 250px;
+                    }
+
+                    @include md {
+                        top: 170px;
+                        font-size: 30px;
+                        line-height: 36px;
+                    }
+
+                    @include sm {
+                        top: 280px;
+                        font-size: 50px;
+                        line-height: 50px;
+                    }
+
+                    @include xxs {
+                        top: 164px;
+                        font-size: 30px;
+                    }
+
+                }
+                .album__var__item--texts{
+                    margin-bottom: 30px;
+
+                    @include xl {
+                        margin-bottom: 10px;
+                    }
+
+                    @include md {
+                        margin-bottom: 0px;
+                    }
+                    .album__var__text__item{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 15px 0;
+                        .album__texts--p{
+                            font-size: 15px;
+                            line-height: 40px;
+                            color: #505050;
+                            font-weight: 400;
+
+                            @include md {
+                                font-size: 12px;
+                                line-height: 30px;
+                            }
+
+                            @include sm {
+                                font-size: 15px;
+                                line-height: 40px;
+                            }
+                        }
+                        .album__texts--span{
+                            display: block;
+                            width: 90px;
+                            height: 1px;
+                            background-color: #505050;
+                        }
+                    }
+                }
+
+                .album__var__waves{
+                    width:60%;
+                    height: 7px;
+                    margin-bottom: 25px;
+
+                    @include xl {
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .album__var__price--text{
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: black;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                    text-decoration: line-through;
+
+                    @include md {
+                        font-size: 16px;
+                    }
+
+                    @include sm {
+                        font-size: 20px;
+                    }
+                }
+
+                .album__var__end--p{
+                    font-size: 15px;
+                    font-style: italic;
+                    font-weight: 500;
+                    color: #505050;
+                }
+
+                .album__var__mainbtn{
+                    position: absolute;
+                    bottom: -25px;
+                    left: auto;
+                    padding: 10px 60px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    line-height: 25px;
+                    border-radius: 50px;
+
+                    @include md {
+                        padding: 5px 60px;
+                    }
+
+                    @include sm {
+                        padding: 10px 135px;
+                    }
+
+                    @include xxs {
+                        padding: 10px 67px;
+                        font-size: 10px;
+                        line-height: 20px;
+                    }
+                }
+
+                .img__price__2500{
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

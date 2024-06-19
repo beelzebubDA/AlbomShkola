@@ -1,0 +1,154 @@
+.downloadVariant{
+
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: linear-gradient(52deg, #94e6f4, #ffcde8);
+    font-family:'Montserrat', sans-serif;
+
+    .dowVar--content{
+
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        max-width: 1020px;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        border-radius: 50px;
+        margin-top: 100px;
+        padding: 50px 75px;
+
+        @include lg {
+            width: 95%;
+            padding: 30px 30px;
+        }
+
+        .dowVar__modal--body{
+            .dowVar__modal__sides{
+                display: flex;
+                gap: 0 50px;
+                align-items: center;
+                justify-content: center;
+
+                @include xs {
+                    flex-direction: column-reverse;
+                }
+
+                .dowVar__L__side{
+                    .dowVar__mainTitle{
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+
+                    .dowVar__L__side--text{
+                        margin-bottom: 20px;
+                    }
+
+                    .dowVar__L__side__soc__block{
+                        margin-bottom: 30px;
+                        display: flex;
+                        gap: 0 25px;
+                        align-items: center;
+
+                        .soc__block--item{
+                            position: relative;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .dowVar__Form{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 15px 0;
+                        .dowVar__Form--input{
+                            height: 60px;
+                            width: 100%;
+                            padding-left: 15px;
+                            border-radius: 15px;
+                            outline: none;
+                        }
+                        .dowVar__Form--submit{
+                            height: 60px;
+                            width: 100%;
+                            background: #58acff;
+                            color: white;
+                            border-radius: 15px;
+                            margin-bottom: 20px;
+                            border: none;
+                            
+                            &:hover {
+                                box-shadow: 0 9px 35px -17px #58acff;
+                            }
+                        }
+                    }
+
+                    .dowVar__text{
+                        margin-bottom: 20px;
+                    }
+
+                    .dowVar__tel{
+                        text-decoration: none;
+                        font-weight: 700;
+                        font-size: 24px;
+                        color: black;
+                        display: flex;
+                        justify-content: end;
+                    }
+                }
+
+                .dowVar__R__side{
+                    text-align: end;
+                    .dowVar__R__img{
+                        width: 400px;
+                        height: 450px;
+                        object-fit: fill;
+
+                        @include sm {
+                            width: 350px;
+                            height: 400px;
+                        }
+
+                        @include xxs {
+                            width: 290px;
+                            height: 320px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dowVar__modal--footer{
+            .dowVarClose{
+                position: absolute;
+                top: -25px;
+                right: -30px;
+                cursor: pointer;
+
+                @include lg {
+                    top: -45px;
+                    right: 0px;
+                }
+
+                @include sm {
+                    top: -45px;
+                    right: -10px;
+                }
+
+                @include xxs {
+                    right: 10px;
+                }
+            }
+        }
+    }
+}

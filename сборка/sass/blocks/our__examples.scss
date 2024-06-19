@@ -1,0 +1,60 @@
+.our__examples{
+    font-family:'Montserrat', sans-serif;
+    .our__ex__block{
+        margin-top: 100px;
+
+        @include xs {
+            margin-top: 60px;
+        }
+        .our__ex__titles{
+            text-align: center;
+
+            h2{
+                margin-bottom: 0;
+            }
+
+            span{
+                margin: 10px auto 25px auto;
+            }
+        }
+
+        .our__ex__gallery{
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            margin-bottom: 100px;
+
+            @include sm {
+                margin-bottom: 60px;
+            }
+
+            .our__ex__gallery--item{
+                width: 700px;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .our__ex__btn{
+            text-align: center;
+        }
+
+        .our__ex--btn{
+            padding: 30px 65px;
+            border-radius: 40px;
+            text-decoration: none;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            z-index: 2;
+
+            @include xxs {
+                padding: 20px 10px;
+            }
+        }
+    }
+}

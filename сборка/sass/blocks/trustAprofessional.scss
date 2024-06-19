@@ -1,0 +1,192 @@
+.trustAprofessional{
+    .trustAprofessional__block{
+        font-family:'Montserrat', sans-serif;
+        font-weight: 400;
+        padding-bottom: 185px;
+
+        @include lg {
+            padding-bottom: 125px;
+        }
+
+        @include sm {
+            padding-bottom: 100px;
+        }
+
+        @include xs {
+            padding-bottom: 50px;
+        }
+
+        .tAprof__texts{
+            color: black;
+            position: relative;
+            z-index: 3;
+            padding-left: 70px;
+            padding-bottom: 45px;
+            .tAprof__mainTitle{
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 35px;
+                padding-bottom: 15px;
+            }
+
+            .tAprof__mainSubtitle{
+                font-size: 18px;
+                line-height: 26px;
+
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .tAprof__acquaintance{
+            padding: 65px 0 70px 75px;
+            border-radius: 50px;
+            color: #505050;
+            display: flex;
+            flex-direction: column;
+            gap: 35px 0;
+            position: relative;
+            background: linear-gradient(52deg, #94e6f4 30%, #ffcde8 70%);
+
+            @include lg {
+                padding: 40px 0 15px 50px;
+            }
+
+            @include md {
+                gap: 15px 0;
+                padding: 30px 0 30px 25px;
+            }
+
+            @include sm {
+                padding: 30px 0 30px 30px;
+            }
+
+            .tAprof__Acqu--title{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            .tAprof__Acqu--p{
+                font-size: 18px;
+                line-height: 25px;
+
+                @include md {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                @include sm {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            .tAprof__man{
+                position: absolute;
+                bottom: 0;
+                right: 90px;
+
+                @include xl {
+                    right: 10px;
+                }
+
+                @include lg {
+                    right: 35px;
+                    width: 42%;
+                }
+
+                @include md {
+                    width: 38%;
+                }
+
+                @include sm {
+                    display: none;
+                }
+            }
+        }
+
+        .tAprof__soc__block{
+            padding-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding-left: 75px;
+            padding-right: 75px;
+            gap: 0 200px;
+
+            @include xxl {
+                gap: 0 100px;
+            }
+            
+            @include xl {
+                gap: 0 60px;
+            }
+
+            @include lg {
+                gap: 0 90px;
+                padding-left: 45px;
+                padding-right: 40px;
+                padding-top: 30px;
+            }
+
+            @include md {
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 20px;
+                flex-direction: column;
+                text-align: center;
+                gap: 30px 0;
+
+            }
+
+
+            .tAprof__soc--p{
+                font-size: 18px;
+                line-height: 25px;
+                color: #505050;
+
+                @include lg {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+
+                @include md {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+
+            .tAprof__soc--tel{
+                font-weight: 700;
+                line-height: 40px;
+                font-size: 28px;
+                color: black;
+                text-decoration: none;
+
+                @include lg {
+                    line-height: 30px;
+                    font-size: 25px;
+                }
+            }
+
+            .tAprof__soc__net{
+                display: flex;
+                gap: 0 30px;
+                margin-left: 100px;
+                align-items: center;
+
+                @include lg {
+                    gap: 0 20px;
+                    margin-left: 60px;
+                }
+
+                @include md {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

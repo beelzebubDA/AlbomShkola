@@ -1,0 +1,183 @@
+.conception{
+    font-family:'Montserrat', sans-serif;
+    padding-bottom: 112px;
+
+    @include xs {
+        padding-bottom: 50px;
+    }
+
+    .conception__block{
+        position: relative;
+
+        .concep__main__title {
+            @include lg {
+                margin-top: 0;
+            }
+        }
+
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            background-image: url(/img/concep__R__bg.png);
+            width: 780px;
+            height: 780px;
+            right: 100px;
+            top: -350px;
+
+            @include lg {
+                display: none;
+            }
+        }
+
+        .concep__hand__img{
+            position: absolute;
+            top: 300px;
+            left: 245px;
+            z-index: 4;
+
+            @include lg {
+                top: 300px;
+                left: 150px;
+            }
+
+            @include sm {
+                display: none;
+            }
+        }
+        .concep__sides{
+            display: flex;
+            gap: 0 255px;
+
+            @include lg {
+                gap: 0px 180px;
+            }
+
+            @include sm {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .concep__L__side{
+                position: relative;
+                margin-left: 65px;
+
+                @include lg {
+                    margin-left: 20px;
+                }
+
+                &::before{
+                    background: linear-gradient(52deg,#d5f1f9,#fef9fc);
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 415px;
+                    height: 415px;
+                    top: -140px;
+                    left: -60px;
+                    border-radius: 50%;
+                    z-index: 2;
+
+                    @include lg {
+                        width: 350px;
+                        height: 350px;
+                        top: -115px;
+                    }
+
+                    @include sm {
+                        width: 250px;
+                        height: 250px;
+                        top: -72px;
+                        left: 100px;
+                    }
+
+                    @include xxs {
+                        width: 150px;
+                        height: 150px;
+                        top: 0px;
+                        left: 2px;
+                    }
+                }
+
+                .concep__L__title{
+                    position: relative;
+                    font-weight: 700;
+                    font-size: 80px;
+                    z-index: 3;
+
+                    @include lg {
+                        font-size: 70px;
+                    }
+                }
+
+                .concep__L__subtitle{
+                    position: relative;
+                    z-index: 3;
+                }
+            }
+
+            .concep__R__side{
+                display: flex;
+                flex-direction: column;
+                gap: 40px 0;
+                position: relative;
+                z-index: 2;
+                .concep__R__item{
+                    display: flex;
+                    gap: 0 55px;
+
+                    @include xs {
+                        gap: 0px 30px !important;
+                    }
+
+                    @include xxs {
+                        gap: 0 20px !important;
+                    }
+
+
+                    .concep__R__item--num{
+                        font-weight: 700;
+                        font-size: 50px;
+                        background-color: linear-gradient(52deg, #d2ecf7, #fdcde8);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    .concep__R__r--texts{
+                        .concep__R__r--title{
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 26px;
+                            color: black;
+
+                            @include xxs {
+                                font-size: 16px;
+                                line-height: 25px;
+                            }
+                        }
+
+                        .concep__R__r--subtitle{
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: #515151;
+                            padding-top: 10px;
+                            padding-bottom: 25px;
+
+                            @include xs {
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+                            }
+                        }
+
+                        .concep__R__r--img{
+                            width: 70%;
+                            height: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

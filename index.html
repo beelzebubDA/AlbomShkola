@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-core.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.3/plyr.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.3/plyr.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cndk.beforeafter.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <script>
+        (function(w, d, s, o){
+          var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+            if (document.readyState !== 'loading') Marquiz.init(o);
+            else document.addEventListener("DOMContentLoaded", function() {
+              Marquiz.init(o);
+            });
+          };
+          d.head.insertBefore(j, d.head.firstElementChild);
+        })(window, document, 'script', {
+            host: '//quiz.marquiz.ru',
+            region: 'eu',
+            id: '63e1487c8ddaf0004f479141',
+            autoOpen: 10,
+            autoOpenFreq: 'once',
+            openOnExit: true,
+            disableOnMobile: false
+          }
+        );
+    </script> -->
+    <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+    <title>albom.shkola.ru</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__block">
+                    <div class="header__l__side">
+                        <div class="header__l__logo">
+                            <a href="#" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo"></picture></a>
+                            <p class="header__subtitle">Выпускные альбомы <br> для школьников <br> в Москве и области</p>
+                        </div>
+                        <nav class="header__nav-menu">
+                            <ul class="header__lists">
+                                <li class="header__list"><a class="header__list__link" href="#album__variants">ЦЕНЫ</a></li>
+                                <li class="header__list"><a class="header__list__link" href="#our__examples">ГАЛЕРЕЯ ФОТО</a></li>
+                                <li class="header__list"><a class="header__list__link" href="#covers">ДИЗАЙНЫ ОБЛОЖЕК</a></li>
+                                <li class="header__list"><a class="header__list__link" href="#quiz__reviews">ОТЗЫВЫ</a></li>
+                            </ul>
+                        </nav>
+                    </div>    
+                    <div class="header__r__side">
+                        <div class="header__r__links">
+                            <div class="header__hamburger">
+                                <button class="header_hamburger-menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                                    <svg width="50" height="50" viewBox="0 0 100 100">
+                                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                                    <path class="line line2" d="M 20,50 H 80" />
+                                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="header__telAndbtn">
+                                <a class="header__call" href="tel:+79551511122">+7 (955) <span>151-11-22</span></a>
+                                <a href="#" class="header__sign__up mainbtn gApresentModal__open" id="gApresentModal__open">Получить презентацию</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero__block">          
+                    <div class="hero__L__side">
+                        <picture><source srcset="img/hero__img01.webp" type="image/webp"><img class="hero__big__img" src="img/hero__img01.jpg"></picture> 
+                    </div>
+                    <div class="hero__R__side">
+                        <div class="hero__R__side__imgAndlist">
+                            <picture><source srcset="img/hero__img02.webp" type="image/webp"><img class="hero__img" src="img/hero__img02.jpg"></picture>
+                            <div class="hero__R__side--items">
+                                <div class="hero__R__side--item">
+                                    <picture><source srcset="img/hero__list_dec.webp" type="image/webp"><img src="img/hero__list_dec.png"></picture>
+                                    <div class="hero__item--text">Первая оплата только <br> после начала съемки</div>
+                                </div>
+                                <div class="hero__R__side--item">
+                                    <picture><source srcset="img/hero__list_dec.webp" type="image/webp"><img src="img/hero__list_dec.png"></picture>
+                                    <div class="hero__item--text">В стоимость <br><span>ВКЛЮЧЕНО ВСЕ:</span><br> фотографирование, <br> обложка, печать и доставка
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__side__ticket">
+                            <h2 class="hero__ticket--title mainTitle">ЯРКИЕ И ЖИВЫЕ</h2>
+                            <p class="hero__ticket--subtitle">ВЫПУСКНЫЕ АЛЬБОМЫ <br> ДЛЯ ШКОЛЬНИКОВ <br><span></span></p>
+                            <div class="hero__ticket__price">
+                                <a class="hero__ticket__price--text">ОТ <span>1700</span>₽</a>
+                            </div>
+                        </div>
+                        <div class="hero__btn">
+                            <a href="#" class="hero__R__order HerogApresM_open mainbtn" id="gApresentModal__open"><span>получить презентацию <br> вариантов альбомов</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about__album">
+            <div class="container">
+                <div class="about__album__block">
+                    <div class="about__album__items">
+                        <div class="about__album__item">
+                            <picture><source srcset="img/about__item__img01.webp" type="image/webp"><img src="img/about__item__img01.png"></picture>
+                            <p>Печаем на профессиональном оборудовании в одной <br> из лучших типографий Москвы</p>
+                            <span></span>
+                        </div>
+                        <div class="about__album__item">
+                            <picture><source srcset="img/about__item__img02.webp" type="image/webp"><img src="img/about__item__img02.png"></picture>
+                            <p>Максимально <br>
+                                естественные фотографии <br>
+                                с ручной ретушью всех фото</p>
+                            <span></span>
+                        </div>
+                        <div class="about__album__item">
+                            <picture><source srcset="img/about__item__img03.webp" type="image/webp"><img src="img/about__item__img03.png"></picture>
+                            <p>Можно выбрать, какие <br>
+                                фото будут в альбоме + <br>
+                                дарим альбом учителю</p>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="about__album__titles">
+                        <picture><source srcset="img/waves.webp" type="image/webp"><img class="waves" src="img/waves.png"></picture>
+                        <h2 class="about__album--title scndTitle">У вас будет альбом <br>c 
+                            <span> "живыми" фотографиями</span> школьной жизни,</h2>
+                        <p class="about__album--subtitle">а не очередные “унылые" фото, как у всех</p>
+                        <picture><source srcset="img/waves.webp" type="image/webp"><img class="waves" src="img/waves.png"></picture>
+
+                        <h2 class="about__album--title02 mainTitle">В альбоме будут <br> 2 вида съемок</h2>
+                    </div>
+                    <div class="about__album__btns">
+                        <a href="#" class="about__album--btn btn__blue pModalOpen__btn mainbtn" id="pModalOpen__btn">Портретная съемка</a>
+                        <a href="#" class="about__album--btn gModal__btn mainbtn" id="gModal__btn">общие фотографии</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="individual__approaches" id="individual__approaches">
+            <div class="container">
+                <div class="individual__appr__block">
+                    <div class="individual__appr__items">
+                        <div class="individual__appr--item ind__item01">
+                            <picture><source srcset="img/individual__appr__img01.webp" type="image/webp"><img src="img/individual__appr__img01.png" class="ind__appr__img"></picture>
+                            <div class="ind__appr--texts">
+                                <h2 class="ind__appr--title">Индивидуальный <br> подход при съемке</h2>
+                                <p class="ind__appr--p">Раскрывая эмоции детей, делаем фото <br> максимально живыми и естественными. <br> Выбираем подходящие позы и ракурсы <br> индивидуально</p>
+                            </div>
+                        </div>
+                        <div class="individual__appr--item ind__item02">
+                            <picture><source srcset="img/individual__appr__img02.webp" type="image/webp"><img src="img/individual__appr__img02.png" class="ind__appr__img"></picture>
+                            <div class="ind__appr--texts">
+                                <h2 class="ind__appr--title">Каждый выбирает <br> самостоятельно фото <br> в свой альбом</h2>
+                                <p class="ind__appr--p">А не просто узнает, какие фото <br> будут в альбоме после печати, <br> без личного выбора</p>
+                            </div>
+                        </div>
+                        <div class="individual__appr--item ind__item03">
+                            <picture><source srcset="img/individual__appr__img03.webp" type="image/webp"><img src="img/individual__appr__img03.png" class="ind__appr__img"></picture>
+                            <div class="ind__appr--texts">
+                                <h2 class="ind__appr--title">Вставляем фото всех <br> учеников в альбом</h2>
+                                <p class="ind__appr--p">Не делая перевес по количеству <br> фото в пользу нескольких человек</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our__examples" id="our__examples">
+            <div class="container">
+                <div class="our__ex__block">
+                    <div class="our__ex__titles">
+                        <h2 class="scndTitle">
+                            Знаем, как <br><span> сделать довольными всех мам, пап и детей</span>
+                        </h2>
+                        <span class="spanGrad"></span>
+                        <p class="main__subtitle">
+                            Снимаем так, что фото не устареют даже, <br> когда на них будут смотреть дети нынешних выпускников
+                        </p>
+                    </div>
+                    <div class="our__ex__gallery" id="gallery">
+
+                        <div class="our__ex__gallery--item">
+                            <picture><source srcset="img/glob12.webp" type="image/webp"><img src="img/glob12.jpg" alt=""></picture>
+                        </div>
+                        <div class="our__ex__gallery--item">
+                            <picture><source srcset="img/glob15.webp" type="image/webp"><img src="img/glob15.jpg" alt=""></picture>
+                        </div>
+                        <div class="our__ex__gallery--item">
+                            <picture><source srcset="img/port04.webp" type="image/webp"><img src="img/port04.jpg" alt=""></picture>
+                        </div>
+                        <div class="our__ex__gallery--item">
+                            <picture><source srcset="img/glob07.webp" type="image/webp"><img src="img/glob07.jpg" alt=""></picture>
+                        </div>
+                        <div class="our__ex__gallery--item">
+                            <picture><source srcset="img/glob17.webp" type="image/webp"><img src="img/glob17.jpg" alt=""></picture>
+                        </div>
+                        <div class="our__ex__gallery--item">
+                            <picture><source srcset="img/port01.webp" type="image/webp"><img src="img/port01.jpg" alt=""></picture>
+                        </div>
+                        <div class="our__ex__gallery--item">
+                            <picture><source srcset="img/glob27.webp" type="image/webp"><img src="img/glob27.jpg" alt=""></picture>
+                        </div>
+                        <div class="our__ex__gallery--item">
+                            <picture><source srcset="img/port02.webp" type="image/webp"><img src="img/port02.jpg" alt=""></picture>
+                        </div>
+
+                    </div>
+                    <div class="our__ex__btn">
+                        <a href="#" class="our__ex--btn mainbtn openSeeMorePhotosModal">Посмотрите больше примеров фото</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="besides">
+            <div class="container">
+                <div class="besides__block">
+                    <picture><source srcset="img/besides__item__bg.webp" type="image/webp"><img src="img/besides__item__bg.png" alt="" class="besides__item__bg01"></picture>
+                    <picture><source srcset="img/besides__item__bg.webp" type="image/webp"><img src="img/besides__item__bg.png" alt="" class="besides__item__bg02"></picture>
+                    <div class="besides__titles">
+                        <h2 class="besides__title mainTitle">Кроме того</h2>
+                        <picture><source srcset="img/waves.webp" type="image/webp"><img class="besides__waves" src="img/waves.png"></picture>
+                    </div>
+                    <div class="besides__items">
+                        <div class="besides-item">
+                            <h2 class="besides__item__title scndTitle"><span>все фото <br> Отправим <br> </span>в цифровом виде</h2>
+                            <p class="besides__subtitle main__subtitle">Передаются вам без  <br> дополнительных оплат. <br> Другие компании <br> требуют оплатить</p>
+                        </div>
+                        <div class="besides-item">
+                            <picture><source srcset="img/besides__600.webp" type="image/webp"><img class="besides__600__img" src="img/besides__600.png"></picture>
+                            <h2 class="besides__item__title besides__item__600--title scndTitle"><span>фотографий</span></h2>
+                            <p class="besides__subtitle main__subtitle">(примерно)</p>
+                        </div>
+                        <div class="besides-item">
+                            <h2 class="besides__item__title scndTitle"><span>Храним фото <br> в течении 3х <br> месяцев</span></h2>
+                            <p class="besides__subtitle main__subtitle">Можете успеть <br> скачать все фото <br> в облачном <br> хранилище</p>
+                        </div>
+                    </div>
+                    <div class="besides__sides">
+                        <div class="besides__L__side">
+                            <picture><source srcset="img/besides__hand__img.webp" type="image/webp"><img src="img/besides__hand__img.png" alt="" class="besides__hand"></picture>
+                            <h2 class="besides__L__side--title scndTitle">Не экономим на качестве, <br> <span>печатаем в одной из лучших <br> типографий Москвы</span></h2>
+                            <p class="besides__L__subtitle main__subtitle">
+                                Альбом сохраняется, как новый десятилетиями
+                            </p>
+                        </div>
+                        <div class="besides__R__side">
+                            <div class="beside__R__side__block">
+                                <h2 class="beside__R__side--title">Настоящие, <br><span>яркие</span></h2>
+                                <p class="beside__R__side--subtitle">и неповторимые <br> эмоции <br> выпускников</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="album__review" id="album__review">
+            <div class="container">
+                <div class="album__rev__block">
+                    <div class="album__rev__sides">
+                        <div class="album__L__side">
+                            <a href="#" class="img album__L__side--img"><picture><source srcset="img/album__L__block--img.webp" type="image/webp"><img src="img/album__L__block--img.png" alt=""></picture></a>
+                        </div>
+                        <div class="album__R__side">
+                            <div class="album__R__side__block">
+                                <div class="album__R__side--top"><span class="album__R__side--span spanGrad"></span>Раскрытие на 180 градусов</div>
+                            <p class="album__R__side--botom">Используется технология LayFlat <span>без шва посередине</span> в месте <br> крепления листов. Удобно листать и <span>видеть фотографию целиком</span></p>
+                            </div>  
+                            <div class="album__R__side__block">
+                                <div class="album__R__side--top"><span class="album__R__side--span spanGrad"></span>Четырехцветная HD полиграфия</div>
+                            <p class="album__R__side--botom">Печатаем в типографии на профессиональной машине последнего <br> поколения HP Indigo 12000 и 20000. Позволяет получить картинку <br> <span>максимально приближенной к естественной</span></p>
+                            </div>      
+                            <div class="album__R__side__block">
+                                <div class="album__R__side--top"><span class="album__R__side--span spanGrad"></span>Ламинированная обложка</div>
+                            <p class="album__R__side--botom">Не боится грязи, воды и <span>выгорания даже при прямом палящем солнце</span></p>
+                            </div> 
+                            <div class="album__R__side__block">
+                                <div class="album__R__side--top"><span class="album__R__side--span spanGrad"></span>Плотная бумага с 2х сторонней ламинацией</div>
+                            <p class="album__R__side--botom">Страницы толщиной 0.9 мм удобно листать и <span>невозможно смять <br> или случайно порвать</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="album__sup__f__the__pres">
+                        <h2 class="album__sup--title scndTitle">ЗАПИШИТЕСЬ<span> НА БЕСПЛАТНУЮ <br> ОНЛАЙН ПРЕЗЕНТАЦИЮ АЛЬБОМОВ</span></h2>
+                        <div class="album__sup__reg__block">
+                            <p class="album__reg__block--subtitle main__subtitle">Получите более 20 вариантов концептов альбомов <br>и вариантов съемок  с ценами для обсуждения <br> в родительском или классном чате</p>
+                            <form action="POST" name="album__reg__form" class="album__reg__form">
+                                <input class="album__reg__input" type="text" placeholder="Введите телефон  +7 ( _____ )  _____   ___   ___" required>
+                                <a href="#" class="album__reg__btn mainbtn" name="album__reg__btn">Записаться на презентацию</a>
+                            </form>
+                            <picture><source srcset="img/album__reg__block__man.webp" type="image/webp"><img src="img/album__reg__block__man.png" class="album__reg__block__man"></picture>
+                        </div>
+                        <div class="album__sup__info__block">
+                            <p class="album__sup__L--info">Или по телефону<span> +7 (995) 151-11-22</span></p>
+                            <p class="album__sup__R--info"><span>Валентин Савин</span>Фотограф</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="manual__processing" id="manual__processing">
+            <div class="container">
+                <div class="man__proc__block">
+                    <div class="man__proc__sides">
+                        <div class="man__proc__L--side">
+                            <h2 class="man__proc__L--title scndTitle">Все фото проходят <br><span>ручную обработку</span> <br> и ретушь для создания <br><span>ровного цвета кожи <br> без изъянов</span></h2>
+                            <div class="man__proc__L__side--block">
+                                <picture><source srcset="img/man__proc__L__side__block__hand.webp" type="image/webp"><img src="img/man__proc__L__side__block__hand.png" alt="" class="man__proc__L__side__block--hand"></picture>
+                                <p class="man__proc__L__side--p">
+                                    При этом <br> сохраняем баланс <br> естественной красоты
+                                </p>
+                            </div>
+                            <div class="man__proc__text__and__grad">
+                                <p class="man__proc__L--p">Смотрите фото <br> до и после ретуши <span class="spanGrad"></span></p>
+                            </div>
+                        </div>
+                        <div class="man__proc__R--side">
+                            <div class="preview_content wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".3s">
+                                <div data-type="data-type-image" class="preview_images">
+                                    <div data-type="before" class="images_item"><picture><source srcset="img/bad__variant.webp" type="image/webp"><img src="img/bad__variant.jpg"></picture></div>
+                                    <div data-type="after" class="images_item"><picture><source srcset="img/good__variant.webp" type="image/webp"><img src="img/good__variant.jpg"></picture></div>
+                                </div>
+                            </div>
+                            <div class="man__proc__R__text__and__grad">
+                                <div class="man__proc__R__TAG--block">
+                                    <p class="man__proc__R--p">без  "зафотошопливания"</p>
+                                    <picture><source srcset="img/man__proc__waves.webp" type="image/webp"><img src="img/man__proc__waves.png" class="man__proc__R__waves"></picture>
+                                </div>
+                                <div class="man__proc__R__TAG--block">
+                                    <p class="man__proc__R--p">без создания кукольности лица</p>
+                                    <picture><source srcset="img/man__proc__waves.webp" type="image/webp"><img src="img/man__proc__waves.png" class="man__proc__R__waves"></picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="covers" id="covers">
+            <div class="container">
+                <div class="covers__block">
+                    <h2 class="covers__main__title scndTitle">Обложку альбома можно выбрать <br><span> из современных стильных дизайнов</span></h2>
+                    <span class="spanGrad"></span>
+                    <p class="covers__main__subtitle main__subtitle">или заказать <span> авторский дизайн </span>под ваши желания</p>
+                    <picture><source srcset="img/waves.webp" type="image/webp"><img src="img/waves.png" class="covers__waves"></picture>
+                    <p class="covers__main__subtitle main__subtitle">Смотрите готовые дизайны</p>
+                    <div class="covers__select__block">
+                        <div class="styles__box box">
+                            <select class="school__choose">
+                            <option selected value="junior">Младшая школа</option>
+                            <option value="high">Старшая школа</option>
+                            </select>
+                        </div>
+                        <div class="classes__box box">
+                            <select class="design__chooser">
+                            <option value="classic">Классика</option>
+                            <option value="modern">Модерн</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="lightgallery covers__examples">
+                        <a href="img/classicM01.jpg" class="covers__item classicM visible">
+                            <picture><source srcset="img/classicM01.webp" type="image/webp"><img class="covers__item--img" src="img/classicM01.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/classicM02.jpg" class="covers__item classicM visible">
+                            <picture><source srcset="img/classicM02.webp" type="image/webp"><img class="covers__item--img" src="img/classicM02.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/classicM03.jpg" class="covers__item classicM visible">
+                            <picture><source srcset="img/classicM03.webp" type="image/webp"><img class="covers__item--img" src="img/classicM03.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/classicM04.jpg" class="covers__item classicM visible">
+                            <picture><source srcset="img/classicM04.webp" type="image/webp"><img class="covers__item--img" src="img/classicM04.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/classicM05.jpg" class="covers__item classicM visible">
+                            <picture><source srcset="img/classicM05.webp" type="image/webp"><img class="covers__item--img" src="img/classicM05.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/classicM06.jpg" class="covers__item classicM visible">
+                            <picture><source srcset="img/classicM06.webp" type="image/webp"><img class="covers__item--img" src="img/classicM06.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/moddernM01.jpg" class="covers__item modernM">
+                            <picture><source srcset="img/moddernM01.webp" type="image/webp"><img class="covers__item--img" src="img/moddernM01.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/moddernM02.jpg" class="covers__item modernM">
+                            <picture><source srcset="img/moddernM02.webp" type="image/webp"><img class="covers__item--img" src="img/moddernM02.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/moddernM03.jpg" class="covers__item modernM">
+                            <picture><source srcset="img/moddernM03.webp" type="image/webp"><img class="covers__item--img" src="img/moddernM03.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/moddernM04.jpg" class="covers__item modernM">
+                            <picture><source srcset="img/moddernM04.webp" type="image/webp"><img class="covers__item--img" src="img/moddernM04.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/moddernM05.jpg" class="covers__item modernM">
+                            <picture><source srcset="img/moddernM05.webp" type="image/webp"><img class="covers__item--img" src="img/moddernM05.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/moddernM06.jpg" class="covers__item modernM">
+                            <picture><source srcset="img/moddernM06.webp" type="image/webp"><img class="covers__item--img" src="img/moddernM06.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/classicS01.jpg" class="covers__item classicS">
+                            <picture><source srcset="img/classicS01.webp" type="image/webp"><img class="covers__item--img" src="img/classicS01.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/classicS02.jpg" class="covers__item classicS">
+                            <picture><source srcset="img/classicS02.webp" type="image/webp"><img class="covers__item--img" src="img/classicS02.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/classicS03.jpg" class="covers__item classicS">
+                            <picture><source srcset="img/classicS03.webp" type="image/webp"><img class="covers__item--img" src="img/classicS03.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/classicS04.jpg" class="covers__item classicS">
+                            <picture><source srcset="img/classicS04.webp" type="image/webp"><img class="covers__item--img" src="img/classicS04.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/classicS05.jpg" class="covers__item classicS">
+                            <picture><source srcset="img/classicS05.webp" type="image/webp"><img class="covers__item--img" src="img/classicS05.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/classicS06.jpg" class="covers__item classicS">
+                            <picture><source srcset="img/classicS06.webp" type="image/webp"><img class="covers__item--img" src="img/classicS06.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/moddernS01.jpg" class="covers__item modernS">
+                            <picture><source srcset="img/moddernS01.webp" type="image/webp"><img class="covers__item--img" src="img/moddernS01.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/moddernS02.jpg" class="covers__item modernS">
+                            <picture><source srcset="img/moddernS02.webp" type="image/webp"><img class="covers__item--img" src="img/moddernS02.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/moddernS03.jpg" class="covers__item modernS">
+                            <picture><source srcset="img/moddernS03.webp" type="image/webp"><img class="covers__item--img" src="img/moddernS03.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/moddernS04.jpg" class="covers__item modernS">
+                            <picture><source srcset="img/moddernS04.webp" type="image/webp"><img class="covers__item--img" src="img/moddernS04.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/moddernS05.jpg" class="covers__item modernS">
+                            <picture><source srcset="img/moddernS05.webp" type="image/webp"><img class="covers__item--img" src="img/moddernS05.jpg" alt=""></picture>
+                        </a>
+                        <a href="img/moddernS06.jpg" class="covers__item modernS">
+                            <picture><source srcset="img/moddernS06.webp" type="image/webp"><img class="covers__item--img" src="img/moddernS06.jpg" alt=""></picture>
+                        </a>
+                    </div>
+                    <div class="covers__links">
+                        <a href="#" class="covers__show__more">Показать еще</a>
+                        <a href="#" class="covers__mainbtn mainbtn openDownVarModal">скачайте другие варианты <br> готовых дизайнов</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mini__block">
+            <div class="container">
+                <div class="mini__bl">
+                    <picture><source srcset="img/mini__block__bg.webp" type="image/webp"><img src="img/mini__block__bg.png" alt="" class="main__bl__bg"></picture>
+                    <h2 class="mini__bl__title">
+                        Выпускники<br><span> оживают </span><br>на наших фото
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+                <section class="album__variants" id="album__variants">
+            <div class="container">
+                <div class="album__Var__block">
+                    <h2 class="album__var__scndTitle scndTitle">Выберите свой</h2>
+                    <h2 class="album__Var__mainTitle mainTitle">ВАРИАНТ АЛЬБОМА</h2>
+                    <div class="album__var__items">
+                        <div class="album__var__item__glob">
+                            <div class="album__var__item">
+                                <picture><source srcset="img/album__var__item__img01.webp" type="image/webp"><img src="img/album__var__item__img01.png" alt="" class="album__var__item__img"></picture>
+                                <h2 class="album__var__item--title">Мини</h2>
+                                <div class="album__var__item--texts">
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">Размер: 20*30</p>
+                                        <span class="album__texts--span"></span>
+                                    </div>
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">Количество страниц: 4</p>
+                                        <span class="album__texts--span"></span>
+                                    </div>
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">1 съемочный день</p>
+                                        <span class="album__texts--span"></span>
+                                    </div>
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">10 портртретных фото</p>
+                                        <span class="album__texts--span"></span>
+                                    </div>
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">1 большой разворт для фото с друзьями</p>
+                                        <span class="album__texts--span"></span>
+                                    </div>
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">1 большой разворот с портретами одноклассников</p>
+                                        <span class="album__texts--span"></span>
+                                    </div>
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">Портрет ребенка на обложке</p>
+                                    </div>
+                                </div>
+                                <picture><source srcset="img/waves.webp" type="image/webp"><img src="img/waves.png" class="album__var__waves"></picture>
+                                <p class="album__var__price--text">2500₽</p>
+                                <a href="#" class="img__price__2500"><picture><source srcset="img/price__2500.webp" type="image/webp"><img src="img/price__2500.png"></picture></a>
+                                <p class="album__var__end--p">*Цена за 1 человека</p>
+                                <a href="#" class="album__var__mainbtn mainbtn openModal__present">Запишитесь на онлайн <br> презентацию</a>
+                            </div>
+                            <a href="#" class="album__item__last__btn wchVidModalOpen">Смотреть видео презентацию</a>
+                        </div>
+                        <div class="album__var__item__glob alb__var__item__02">
+                            <div class="album__var__item">
+                                <picture><source srcset="img/album__var__item__img02.webp" type="image/webp"><img src="img/album__var__item__img02.png" alt="" class="album__var__item__img"></picture>
+                                <h2 class="album__var__item--title">МАКСИ</h2>
+                                <div class="album__var__item--texts">
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">Размер: 20*30</p>
+                                        <span class="album__texts--span"></span>
+                                    </div>
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">Количество страниц: до 40</p>
+                                        <span class="album__texts--span"></span>
+                                    </div>
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">1 съемочный день</p>
+                                        <span class="album__texts--span"></span>
+                                    </div>
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">10 портртретных фото
+                                        </p>
+                                        <span class="album__texts--span"></span>
+                                    </div>
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">10 групповых фото с друзьями и учителями</p>
+                                        <span class="album__texts--span"></span>
+                                    </div>
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">1 большой разворт для фото с друзьями</p>
+                                        <span class="album__texts--span"></span>
+                                    </div>
+                                    <div class="album__var__text__item">
+                                        <p class="album__texts--p">Отдельная страница с портретом ребенка и цитатой</p>
+                                    </div>
+                                </div>
+                                <picture><source srcset="img/waveswhite.webp" type="image/webp"><img src="img/waveswhite.png" class="album__var__waves02"></picture>
+                                <p class="album__var__price--text">5500₽</p>
+                                <a href="#" class="img__price__2500"><picture><source srcset="img/price__4300.webp" type="image/webp"><img src="img/price__4300.png"></picture></a>
+                                <p class="album__var__end--p">*Цена за 1 человека</p>
+                                <a href="#" class="album__var__mainbtn mainbtn openModal__present02">Запишитесь на онлайн <br> презентацию</a>
+                            </div>
+                            <a href="#" class="album__item__last__btn incldModalOpen">Что включено в цену, кроме альбома</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="conception" id="conception">
+            <div class="container">
+                <div class="conception__block">
+                    <picture><source srcset="img/conception__hand.webp" type="image/webp"><img src="img/conception__hand.png" alt="" class="concep__hand__img"></picture>
+                    <h2 class="concep__main__title scndTitle">Во время <br> согласования концепта <br><span> покажем различные <br> варианты съемок</span></h2>
+                    <div class="concep__sides">
+                        <div class="concep__L__side">
+                            <h2 class="concep__L__title mainTitle">но</h2>
+                            <p class="concep__L__subtitle main__subtitle">предоставим право <br> выбора родителям <br> и выпускникам</p>
+                        </div>
+                        <div class="concep__R__side">
+                            <div class="concep__R__item">
+                                <div class="concep__R__item--num">01</div>
+                                <div class="concep__R__r--texts">
+                                    <h2 class="concep__R__r--title">Сами выпускники и родители могут <br> определить концепцию съемки: дресс-код, <br> образы, локации</h2>
+                                    <p class="concep__R__r--subtitle">Дополнительно поможем с выбором</p>
+                                    <picture><source srcset="img/waves.webp" type="image/webp"><img src="img/waves.png" alt="" class="concep__R__r--img"></picture>
+                                </div>
+                            </div>
+                            <div class="concep__R__item">
+                                <div class="concep__R__item--num">02</div>
+                                <div class="concep__R__r--texts">
+                                    <h2 class="concep__R__r--title">Можно выбрать где производить<br>съемку. В школе или профессиональной <br> студии</h2>
+                                    <p class="concep__R__r--subtitle">Не переживайте, в школу все равно приедет наша мобильная<br>студия с оборудованием</p>
+                                    <picture><source srcset="img/waves.webp" type="image/webp"><img src="img/waves.png" alt="" class="concep__R__r--img"></picture>
+                                </div>
+                            </div>
+                            <div class="concep__R__item">
+                                <div class="concep__R__item--num">03</div>
+                                <div class="concep__R__r--texts">
+                                    <h2 class="concep__R__r--title">Выбираете классические, постановочные <br>или современные фото с неоном, интересным <br>  освещением и тематичным реквизитом</h2>
+                                    <p class="concep__R__r--subtitle">До съемки покажем примеры разных вариантов</p>
+                                    <picture><source srcset="img/waves.webp" type="image/webp"><img src="img/waves.png" alt="" class="concep__R__r--img"></picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <section class="allHappens" id="allHappens">
+            <div class="container">
+                <div class="allHappens__block">
+                    <div class="allH__head">
+                        <h2 class="allH__title scndTitle"><span>Как все будет происходить</span></h2>
+                        <span class="spanGrad"></span>
+                    </div>
+                    <span class="allH__lines"></span>
+                    <div class="allH__info__block">
+                        <div class="allH__I__item">
+                            <h2 class="allH__I--title">Договеренности</h2>
+                            <p class="allH__I--subtitle">Выбор дизайна обложки, <br> определение концепции <br> съемки и заключение <br> договора</p>
+                        </div>
+                        <div class="allH__I__item">
+                            <h2 class="allH__I--title">Съемка</h2>
+                            <p class="allH__I--subtitle">Фотограф приезжает <br> в школу в назначенное <br> время, производит съемку <br> Вносите 50% оплаты</p>
+                        </div>  
+                        <div class="allH__I__item">
+                            <h2 class="allH__I--title">Обработка и макет</h2>
+                            <p class="allH__I--subtitle">Выбираете фото, <br> которые хотите видеть. <br> Делаем ретушь и создаем <br> предварительный макет <br> Отправляем на согласование</p>
+                        </div>  
+                        <div class="allH__I__item">
+                            <h2 class="allH__I--title">Печать и доставка</h2>
+                            <p class="allH__I--subtitle">Вносите оставшиеся <br> 50% оплаты. Печатаем. <br> Курьер <span>Бесплатно</span> <br> доставит все альбомы <br> на один адрес</p>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz" id="quiz">
+            <div class="container">
+                <div class="quiz__block">
+                    <div class="quizz_block">
+                        
+                        <div class="quizz__quizzes">
+                            <h2 class="quiz__mainTitle scndTitle"><span>Рассчитайте стоимость <br> фотокниги под ваши желания</span></h2>
+                            <p class="quiz__main__subtitle main__subtitle">Ответьте на 4 вопросов и узнайте стоимость</p>
+                            <div data-marquiz-id="63e1487c8ddaf0004f479141"></div>
+                            <script>
+                                (function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Inline', {id: '63e1487c8ddaf0004f479141', buttonText: 'Пройти тест', bgColor: '#d34085', textColor: '#fff', rounded: true, shadow: 'rgba(211, 64, 133, 0.5)', blicked: true, buttonOnMobile: true})
+
+                            </script>
+                        </div>
+                        <div class="quizz__R__info">
+                            <div class="quizz__R__block">
+                                <div class="quizz__R__header">
+                                    <picture><source srcset="img/album__reg__block__man.webp" type="image/webp"><img src="img/album__reg__block__man.png"></picture>
+                                    <p class="quizz__R__H--text">Валентин Савин <br> Фотограф</p>
+                                </div>
+                                <div class="quizz__R__body">
+                                    <p class="quizz__R__B--text">Приемы и подходы к фотографированию <br> под каждый возраст отличаются</p>
+                                    <p class="quizz__R__B--text">Дизайн обложек так же <br> подбирается под возраст.</p>
+                                    <p class="quizz__R__B--text">Это все учитываю работая над фотокнигой.</p>
+                                    <p class="quizz__R__B--text__Last">После опроса получите подарки</p>
+                                </div>
+                                <div class="quizz__R__footer">
+                                    <div class="quizz__R__F__item">
+                                        <picture><source srcset="img/quizz__scale.webp" type="image/webp"><img src="img/quizz__scale.png"></picture>
+                                        <p class="quizz__R__F__text">Чек-лист: Как выбрать <br> порядочного фотографа</p>
+                                    </div>
+                                    <div class="quizz__R__F__item">
+                                        <picture><source srcset="img/quizz__scale.webp" type="image/webp"><img src="img/quizz__scale.png"></picture>
+                                        <p class="quizz__R__F__text">Съемку в фотостудии <br> без оплаты аренды</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quiz__sides" id="quiz__reviews">
+                        <div class="quiz__L__side">
+                            <div class="quiz__L__block">
+                                <h2 class="quiz__L__title">Сохраните <br><span>лучшие <br> моменты</span></h2>
+                                <p class="quiz__L__subtitle">школьных <br> воспоминаний</p>
+                            </div>
+                        </div>
+                        <div class="quiz__R__side">
+                            <h2 class="quiz__R--title scndTitle">Родители и дети<br><span>присылают нам свои отзывы</span></h2>
+                            <picture><source srcset="img/besides__item__bg.webp" type="image/webp"><img class="quiz__R__bg" src="img/besides__item__bg.png"></picture>
+                            <div class="swiper parent__Reviews--slider">
+                                <div class="swiper-wrapper parent__Reviews" id="parent__Reviews">
+                                    <div class="swiper-slide parent__Rev__item">
+                                        <p class="parent__R--name">Евгения</p>
+                                        <h2 class="parent__R--title">Порадовали эмоции и не <br> "кукольные лица" после ретуши</h2>
+                                        <p class="parent__R--reviews">Нет слов, учтены все пожелания. <br> Особенно порадавали эмоции <br> и естественные лица после <br> фотошопа. Все родители, чьи <br> дети принесли домой альбомы, <br> такого же мнения! Вы круто все <br>сделали.</p>
+                                        <p class="parent__R--lastp">Слушать аудио</p>
+                                        <picture><source srcset="img/evgenia.webp" type="image/webp"><img src="img/evgenia.jpg" class="parent__img"></picture>
+                                        <picture><source srcset="img/audioRec.webp" type="image/webp"><img src="img/audioRec.png" class="audio__Rec"></picture>
+                                    </div>
+                                    <div class="swiper-slide parent__Rev__item">
+                                        <p class="parent__R--name">Надежда</p>
+                                        <h2 class="parent__R--title">Классно, что каждый фотографирован в подходящем ему стиле и позе</h2>
+                                        <p class="parent__R--reviews">Процесс мне очень понравился. Разглядели в каждом школьнике индивидуальность. Каждый сфотографирован в своем стиле. И не переборщили с обработкой лиц выпускников. Выглядят максимально натурально.</p>
+                                        <p class="parent__R--lastp">Слушать аудио</p>
+                                        <picture><source srcset="img/nadejda.webp" type="image/webp"><img src="img/nadejda.jpg" class="parent__img"></picture>
+                                        <picture><source srcset="img/audioRec.webp" type="image/webp"><img src="img/audioRec.png" class="audio__Rec"></picture>
+                                    </div>
+                                    <div class="swiper-slide parent__Rev__item">
+                                        <p class="parent__R--name">Марина</p>
+                                        <h2 class="parent__R--title">Сроки выдержаны, хотя заказывали практически впритык</h2>
+                                        <p class="parent__R--reviews">Альбомы крутые. Отличаются от других классов. Очень яркие и наполенные энергией. Без шаблонных и замыленных фото. Сроки были соблюдены несмотря на поздний заказ.</p>
+                                        <p class="parent__R--lastp">Слушать аудио</p>
+                                        <picture><source srcset="img/marina.webp" type="image/webp"><img src="img/marina.jpg" class="parent__img"></picture>
+                                        <picture><source srcset="img/audioRec.webp" type="image/webp"><img src="img/audioRec.png" class="audio__Rec"></picture>
+                                    </div>
+                                    <div class="swiper-slide parent__Rev__item">
+                                        <p class="parent__R--name">Виктория</p>
+                                        <h2 class="parent__R--title">Понравилось и мне и дочери</h2>
+                                        <p class="parent__R--reviews">Получились отличные фото, разные. Есть и «привычные» школьные фото и очень яркие и необычные </p>
+                                        <p class="parent__R--lastp">Слушать аудио</p>
+                                        <picture><source srcset="img/victoria.webp" type="image/webp"><img src="img/victoria.jpg" class="parent__img"></picture>
+                                        <picture><source srcset="img/audioRec.webp" type="image/webp"><img src="img/audioRec.png" class="audio__Rec"></picture>
+                                    </div>
+                                    <div class="swiper-slide parent__Rev__item">
+                                        <p class="parent__R--name">Павел И. <br>Школа 1514</p>
+                                        <h2 class="parent__R--title">Качество работы очень порадовало</h2>
+                                        <p class="parent__R--reviews">Классные фото, останется отличная память. И очень хорошее качество самих альбомов. Это не альбом, а солидная фотокнига)))</p>
+                                        <p class="parent__R--lastp">Слушать аудио</p>
+                                        <picture><source srcset="img/victoria.webp" type="image/webp"><img src="img/victoria.jpg" class="parent__img"></picture>
+                                        <picture><source srcset="img/audioRec.webp" type="image/webp"><img src="img/audioRec.png" class="audio__Rec"></picture>
+                                    </div>
+                                    <div class="swiper-slide parent__Rev__item">
+                                        <p class="parent__R--name">Евгения</p>
+                                        <h2 class="parent__R--title">Порадовали эмоции и не <br> "кукольные лица" после ретуши</h2>
+                                        <p class="parent__R--reviews">Нет слов, учтены все пожелания. <br> Особенно порадавали эмоции <br> и естественные лица после <br> фотошопа. Все родители, чьи <br> дети принесли домой альбомы, <br> такого же мнения! Вы круто все <br>сделали.</p>
+                                        <p class="parent__R--lastp">Слушать аудио</p>
+                                        <picture><source srcset="img/evgenia.webp" type="image/webp"><img src="img/evgenia.jpg" class="parent__img"></picture>
+                                        <picture><source srcset="img/audioRec.webp" type="image/webp"><img src="img/audioRec.png" class="audio__Rec"></picture>
+                                    </div>
+                                    <div class="swiper-slide parent__Rev__item">
+                                        <p class="parent__R--name">Надежда</p>
+                                        <h2 class="parent__R--title">Классно, что каждый фотографирован в подходящем ему стиле и позе</h2>
+                                        <p class="parent__R--reviews">Процесс мне очень понравился. Разглядели в каждом школьнике индивидуальность. Каждый сфотографирован в своем стиле. И не переборщили с обработкой лиц выпускников. Выглядят максимально натурально.</p>
+                                        <p class="parent__R--lastp">Слушать аудио</p>
+                                        <picture><source srcset="img/nadejda.webp" type="image/webp"><img src="img/nadejda.jpg" class="parent__img"></picture>
+                                        <picture><source srcset="img/audioRec.webp" type="image/webp"><img src="img/audioRec.png" class="audio__Rec"></picture>
+                                    </div>
+                                    <div class="swiper-slide parent__Rev__item">
+                                        <p class="parent__R--name">Марина</p>
+                                        <h2 class="parent__R--title">Сроки выдержаны, хотя заказывали практически впритык</h2>
+                                        <p class="parent__R--reviews">Альбомы крутые. Отличаются от других классов. Очень яркие и наполенные энергией. Без шаблонных и замыленных фото. Сроки были соблюдены несмотря на поздний заказ.</p>
+                                        <p class="parent__R--lastp">Слушать аудио</p>
+                                        <picture><source srcset="img/marina.webp" type="image/webp"><img src="img/marina.jpg" class="parent__img"></picture>
+                                        <picture><source srcset="img/audioRec.webp" type="image/webp"><img src="img/audioRec.png" class="audio__Rec"></picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bookATime" id="bookATime">
+            <div class="container">
+                <div class="bookATime__block">
+                    <div class="bAt__head">
+                        <picture><source srcset="img/bookATime__clockImg.webp" type="image/webp"><img class="bAt__clockImg" src="img/bookATime__clockImg.png"></picture>
+                        <h2 class="bAt__main__title scndTitle"><span>Бронируйте время заранее <br></span>Чем раньше, тем меньше сроки</h2>
+                        <span class="spanGrad"></span>
+                        <p class="bAt__main__subtitle main__subtitle">от фотографирования до доставки<span> 40 - 80 дней</span></p>
+                        <picture><source srcset="img/waves.webp" type="image/webp"><img src="img/waves.png" class="bAt__waves"></picture>
+                    </div>
+                    <div class="bAt__table">
+                        <p class="bAt__table__title">В сезон возрастают сроки</p>
+                        <table class="bAt__table__block">
+                            <tr>
+                            <th></th>
+                            <th>Осенью-зимой</th>
+                            <th>Весной</th>
+                            </tr>
+                            <tr>
+                            <td><span>Ожидание очереди на съемку</span></td>
+                            <td>3 дня</td>
+                            <td>от 5 дней</td>
+                            </tr>
+                            <tr>
+                            <td><span>Ожидание согласования макета</span></td>
+                            <td>5 дней</td>
+                            <td>от 9 дней</td>
+                            </tr>
+                            <tr>
+                                <td><span>Печать альбомов</span></td>
+                                <td>14 дней</td>
+                                <td>от 60 дней</td>
+                            </tr>
+                        </table>
+                        <div class="bAt__table__sides">
+                            <div class="bAt__T__L__side">
+                                <p class="bAt__T__L--title">При бронировании съемки</p>
+                                <h2 class="bAt__T__L--GragTitle">до 20 марта 2023</h2>
+                                <p class="bAt__T__L--subtitle">аренда студии и альбом <br> учителю в подарок</p>
+                            </div>
+                            <div class="bAt__T__R__side">
+                                <a href="#" class="bAt__T__R--btn mainbtn">Забронировать съемку <br> <span>и получить подарки</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider-wrapper">
+            <button class="slide-arrow slide-arrow-prev" id="slide-arrow-prev">
+            </button>
+            <button class="slide-arrow slide-arrow-next" id="slide-arrow-next">
+            </button>
+            <div class="slides-container slider__full" id="slides-container">
+                <div class="slide">
+                    <div class="slide__block">
+                        <picture><source srcset="img/slide__block__lamps.webp" type="image/webp"><img src="img/slide__block__lamps.png" alt="" class="slide__block__img01"></picture>
+                        <picture><source srcset="img/slide__block__studiaimg.webp" type="image/webp"><img class="slide__block__img02" src="img/slide__block__studiaimg.jpg"></picture>
+                        <h2 class="slide__title scndTitle">На съемку приедет<span><br> целая мобильная <br> фотостудия</span></h2>
+                        <p class="slide__subtitle main__subtitle">Стойки, вспышки, зонты и прочие <br> элементы для создания максимально <br> качественных и детализированных <br> фото</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__block">
+                        <picture><source srcset="img/slide__block__lamps.webp" type="image/webp"><img src="img/slide__block__lamps.png" alt="" class="slide__block__img01"></picture>
+                        <picture><source srcset="img/slide__block__studiaimg.webp" type="image/webp"><img class="slide__block__img02" src="img/slide__block__studiaimg.jpg"></picture>
+                        <h2 class="slide__title scndTitle">На съемку приедет<span><br> целая мобильная <br> фотостудия</span></h2>
+                        <p class="slide__subtitle main__subtitle">Стойки, вспышки, зонты и прочие <br> элементы для создания максимально <br> качественных и детализированных <br> фото</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__block">
+                        <picture><source srcset="img/slide__block__lamps.webp" type="image/webp"><img src="img/slide__block__lamps.png" alt="" class="slide__block__img01"></picture>
+                        <picture><source srcset="img/slide__block__studiaimg.webp" type="image/webp"><img class="slide__block__img02" src="img/slide__block__studiaimg.jpg"></picture>
+                        <h2 class="slide__title scndTitle">На съемку приедет<span><br> целая мобильная <br> фотостудия</span></h2>
+                        <p class="slide__subtitle main__subtitle">Стойки, вспышки, зонты и прочие <br> элементы для создания максимально <br> качественных и детализированных <br> фото</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__block">
+                        <picture><source srcset="img/slide__block__lamps.webp" type="image/webp"><img src="img/slide__block__lamps.png" alt="" class="slide__block__img01"></picture>
+                        <picture><source srcset="img/slide__block__studiaimg.webp" type="image/webp"><img class="slide__block__img02" src="img/slide__block__studiaimg.jpg"></picture>
+                        <h2 class="slide__title scndTitle">На съемку приедет<span><br> целая мобильная <br> фотостудия</span></h2>
+                        <p class="slide__subtitle main__subtitle">Стойки, вспышки, зонты и прочие <br> элементы для создания максимально <br> качественных и детализированных <br> фото</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__block">
+                        <picture><source srcset="img/slide__block__lamps.webp" type="image/webp"><img src="img/slide__block__lamps.png" alt="" class="slide__block__img01"></picture>
+                        <picture><source srcset="img/slide__block__studiaimg.webp" type="image/webp"><img class="slide__block__img02" src="img/slide__block__studiaimg.jpg"></picture>
+                        <h2 class="slide__title scndTitle">На съемку приедет<span><br> целая мобильная <br> фотостудия</span></h2>
+                        <p class="slide__subtitle main__subtitle">Стойки, вспышки, зонты и прочие <br> элементы для создания максимально <br> качественных и детализированных <br> фото</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__block">
+                        <picture><source srcset="img/slide__block__lamps.webp" type="image/webp"><img src="img/slide__block__lamps.png" alt="" class="slide__block__img01"></picture>
+                        <picture><source srcset="img/slide__block__studiaimg.webp" type="image/webp"><img class="slide__block__img02" src="img/slide__block__studiaimg.jpg"></picture>
+                        <h2 class="slide__title scndTitle">На съемку приедет<span><br> целая мобильная <br> фотостудия</span></h2>
+                        <p class="slide__subtitle main__subtitle">Стойки, вспышки, зонты и прочие <br> элементы для создания максимально <br> качественных и детализированных <br> фото</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <section class="takePresent" id="takePresent">
+            <div class="container">
+                <div class="takePresent__block">
+                    <div class="take__Pres__sides">
+                        <div class="take___Pres__L__side">
+                            <h2 class="takePres__L--title scndTitle"><span>ПОЛУЧИТЕ ПРЕЗЕНТАЦИЮ <br>АЛЬБОМОВ</span> И ОБСУДИТЕ <br>В РОДИТЕЛЬСКОМ <br>ИЛИ КЛАССНом чате</h2>
+                            <a href="#" class="takePres__L__btn mainbtn">Получить презентацию альбомов</a>
+                        </div>
+                        <div class="take__Pres__R__side">
+                            <picture><source srcset="img/take__Pres__pdfImg.webp" type="image/webp"><img class="take__Pres__R__pngImg" src="img/take__Pres__pdfImg.png" alt=""></picture>
+                            <p class="take__Pres__R__subtitle">Придет PDF файл, <br>в нем будет</p>
+                            <ul class="take__Pres__R__list">
+                                <li><picture><source srcset="img/take__Pres__R__list__img.webp" type="image/webp"><img src="img/take__Pres__R__list__img.png" alt=""></picture>Варианты дизайн фотокниги</li>
+                                <li><picture><source srcset="img/take__Pres__R__list__img.webp" type="image/webp"><img src="img/take__Pres__R__list__img.png" alt=""></picture>Подробное описание</li>
+                                <li><picture><source srcset="img/take__Pres__R__list__img.webp" type="image/webp"><img src="img/take__Pres__R__list__img.png" alt=""></picture>Варианты разворотов</li>
+                                <li><picture><source srcset="img/take__Pres__R__list__img.webp" type="image/webp"><img src="img/take__Pres__R__list__img.png" alt=""></picture>Стоимость каждого варианта</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="take__Pres__end--texts">
+                        <div class="take__Pres__end--titles">
+                            <p class="take__Pres__end--title">При бронировании съемки</p>
+                            <h2 class="take__Pres__end--gradTitle">до 20 марта 2023</h2>
+                        </div>
+                        <p class="take__Pres__end--subtitle">аренда студии и альбом учителю в подарок</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="guaranAndQual">
+            <div class="container">
+                <div class="guaranAndQual__block">
+                    <picture><source srcset="img/gAq__block___bg.webp" type="image/webp"><img src="img/gAq__block___bg.png" alt="" class="gAq__block__bg"></picture>
+                    <div class="gAq__titles">
+                        <h2 class="gAq__mainTitle scndTitle">Гарантии соблюдение <br><span> качества и сроков съемки</span></h2>
+                        <span class="gAq__span spanGrad"></span>
+                    </div>
+                    <div class="gAq__items">
+                        <div class="gAq__item">
+                            <h2 class="gAq__item--title">50% оплаты <br> вносится только <br> после начала съемки</h2>
+                            <p class="gAq__item--subtitle">Наличкой или переводом <br> на карту. Остатки после <br> утверждения дизайн-макета</p>
+                        </div>
+                        <div class="gAq__item">
+                            <h2 class="gAq__item--title">Заключаем <br>договор</h2>
+                            <p class="gAq__item--subtitle">Все максимально <br> надежно и прозрачно</p>
+                        </div>
+                        <div class="gAq__item">
+                            <h2 class="gAq__item--title">Предварительный <br>макет</h2>
+                            <p class="gAq__item--subtitle">Неудачные фото не попадут <br> с альбом. Дизайн и фото <br>согласовываемс родителями <br> и выпускниками перед печатью</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trustAprofessional" id="trustAprofessional">
+            <div class="container">
+                <div class="trustAprofessional__block">
+                    <div class="tAprof__texts">
+                        <h2 class="tAprof__mainTitle">Доверьте сделать <br> фотографии профессионалу</h2>
+                        <p class="tAprof__mainSubtitle"><span>с 8ми летним опытом съемки <br> для мировых брендов </span><br>и художественным образованием</p>
+                    </div>
+                    <div class="tAprof__acquaintance">
+                        <h2 class="tAprof__Acqu--title">Здравствуйте, <br> меня зовут Валентин Савин</h2>
+                        <p class="tAprof__Acqu--p">Вот уже 8 лет я профессионально <br> занимаюсь фотографией</p>
+                        <p class="tAprof__Acqu--p">Я ответственный. Никогда не опаздываю. <br> Легко общаюсь вживую и располагаю <br> к себе людей.</p>
+                        <p class="tAprof__Acqu--p">За плечами опыт съемки для крупных частных <br>и государственных компаний: Ниссан, ВТБ, Сбер, <br> КРКА, ГД РФ и другие.</p>
+                        <p class="tAprof__Acqu--p">Самый масштабный мой проект. Нужно было <br> сфотографировать 1500 сотрудников <br> компании Ниссан за 2 недели.</p>
+                        <picture><source srcset="img/tAprof__man__img.webp" type="image/webp"><img src="img/tAprof__man__img.png" alt="" class="tAprof__man"></picture>
+                    </div>
+                    <div class="tAprof__soc__block">
+                        <p class="tAprof__soc--p">Позвоните или напишите мне <br> Покажу примеры, расскажу условия <br> и рассчитаю цену</p>
+                        <a href="tel:+79951511122" class="tAprof__soc--tel">+7 (995) 151-11-22</a>
+                        <div class="tAprof__soc__net">
+                            <a href="#"><picture><source srcset="img/telegram__black.webp" type="image/webp"><img src="img/telegram__black.png" alt="telegram"></picture></a>
+                            <a href="#"><picture><source srcset="img/vk__black.webp" type="image/webp"><img src="img/vk__black.png" alt="vk"></picture></a>
+                            <a href="#"><picture><source srcset="img/whatsapp.webp" type="image/webp"><img src="img/whatsapp.png" alt="whatsapp"></picture></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clientAccordion" id="clientAccordion">
+            <div class="container">
+                <div class="clientAcc__block">
+                    <div class="clientA__titles">
+                        <h2 class="clientA_mainTitle scndTitle">Клиенты <br><span>часто спрашивают</span></h2>
+                        <span class="clientA__spanGrad spanGrad"></span>
+                    </div>
+                    <div class="clientA__accordion">
+                        <div class="accordion">
+                            <div class="accordion__item">
+                                <span class="acc__bg"></span>
+                                <span class="acc__bg02"></span>
+                                <div class="accordion__title">
+                                    <span class="accordion__title-text">Почему лучше заказать альбомы пораньше?</span>
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__short">Кратко: чтобы успеть раздать книги к выпускному.</p>
+                                    В мае у всех, кто работает над альбомом пик сезона. А сроки печати в типографиях вырастают примерно в 2-3 раза. Кроме того, у хороших фотографов может быть уже все занято и придется выбирать из тех, кто остался.
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <span class="acc__bg"></span>
+                                <span class="acc__bg02"></span>
+                                <div class="accordion__title">
+                                    <span class="accordion__title-text">Что делать, если фотографа не пустят в школу?</span>
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__short">Кратко: обычно такого не бывает. У нас есть все справки, прививки и документы</p>
+                                    Но можно круто посниматься в студии. В Москве больше тысячи студий в разных районах. Кроме того, съемка в настоящей фотостудии станет интересным опытом для школьников
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <span class="acc__bg"></span>
+                                <span class="acc__bg02"></span>
+                                <div class="accordion__title">
+                                    <span class="accordion__title-text">Сколько фотографий входит в альбом?</span>
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__short">Кратко: зависит от выбранного варианта альбома, но всегда можно увеличить количество разворотов.</p>
+                                    Вообще же можно вставить ЛЮБОЕ КОЛИЧЕСТВО фото, но мы рекомендуем не мельчить. Фотографии большего размера воспринимаются гораздо эффектнее. Кроме того, мы все равно обработаем, подготовим к печати и отдадим все фото не вошедшие в альбом в электронном виде. Это бесплатно.
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <span class="acc__bg"></span>
+                                <span class="acc__bg02"></span>
+                                <div class="accordion__title">
+                                    <span class="accordion__title-text">Нужно ли будет за что-то доплачивать?</span>
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__short">Кратко: нет.</p>
+                                    Все прописано в договоре и цена не изменится.
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <span class="acc__bg"></span>
+                                <span class="acc__bg02"></span>
+                                <div class="accordion__title">
+                                    <span class="accordion__title-text">Если кого-то не будет в день съемки?</span>
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__short">Кратко: возможна досъемка</p>
+                                    Досъемка обсуждается. Но мы рекомендуем так не делать, так как из-за одного человека задержится получение альбомов для всего класса. Мы не сможем приступить к работе над альбомом пока у нас не будет всего материала.
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <span class="acc__bg"></span>
+                                <span class="acc__bg02"></span>
+                                <div class="accordion__title">
+                                    <span class="accordion__title-text">Как мы получим альбомы?</span>
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__short">Кратко: курьер привезет в любое удобное место в любое удобное время</p>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <span class="acc__bg"></span>
+                                <span class="acc__bg02"></span>
+                                <div class="accordion__title">
+                                    <span class="accordion__title-text">Если мне не понравится дизайн?</span>
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__short">
+                                        Кратко: у нас есть больше вариантов, чем представлено на сайте и свой дизайнер
+                                    </p>
+                                    Любой дизайн можно менять, кроме того, за небольшую плату мы можем разработать индивидуальный дизайн для вашего класса. Дизайнер учтет все пожелания.
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <span class="acc__bg"></span>
+                                <span class="acc__bg02"></span>
+                                <div class="accordion__title">
+                                    <span class="accordion__title-text">Сколько фотографий вы отдаете в электронном виде?</span>
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__short">Кратко: все.</p>
+                                    Все, кроме бракованных (закрытые глаза и т.д.). Количество зависит от формата объема. В среднем около 400-500 фото на класс. Все фото будут обработаны и подготовлены к печати. Это бесплатно
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="answerForQuestion">
+            <div class="container">
+                <div class="aFquest__block">
+                    <div class="aFquest__titles">
+                        <h2 class="aFquest__mainTitle scndTitle"><span>Ответим на любые вопросы</span> <br> и дадим рекомендации по съемке</h2>
+                        <span class="spanGrad"></span>
+                        <p class="aFquest__mainSubtitle main__subtitle">Напишите в мессенджеры</p>
+                    </div>
+                    <div class="aFquest__soc__block">
+                        <picture><source srcset="img/waves.webp" type="image/webp"><img src="img/waves.png" alt="" class="aFquest__waves"></picture>
+                        <div class="aFquest__messangers__block">
+                            <div class="aFquest__M__item">
+                                <a href="#"><picture><source srcset="img/telegram__black.webp" type="image/webp"><img src="img/telegram__black.png" alt=""></picture></a>
+                                <a href="#">Телеграм</a>
+                            </div>
+                            <div class="aFquest__M__item">
+                                <a href="#"><picture><source srcset="img/vk__black.webp" type="image/webp"><img src="img/vk__black.png" alt=""></picture></a>
+                                <a href="#">Вконтакте</a>
+                            </div>
+                            <div class="aFquest__M__item">
+                                <a href="#"><picture><source srcset="img/whatsapp.webp" type="image/webp"><img src="img/whatsapp.png" alt=""></picture></a>
+                                <a href="#">Whatsapp</a>
+                            </div>
+                        </div>
+                        <picture><source srcset="img/waves.webp" type="image/webp"><img src="img/waves.png" alt="" class="aFquest__waves"></picture>
+                        <p class="aFquest__soc__subtitle">Или позвоните по телефону</p>
+                        <a href="tel:+79951511122" class="aFquest__soc__tel">+7 (995) 151-11-22</a>
+                    </div>
+                </div>
+            </div>
+            <div class="linear__Gradient__footer"></div>
+        </section>
+
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__block">
+                    <div class="footer__parts">
+                        <div class="footer__logo_And_subtitle">
+                            <a href="#" class="footer__logo"><picture><source srcset="img/footer__logo.webp" type="image/webp"><img src="img/footer__logo.png" alt=""></picture></a>
+                            <p class="footer__logo__subtitle">Выпускные альбомы <br> для школьников <br> в Москве и области</p>
+                        </div>
+                        <div class="footer__registr">
+                            <p class="footer__regitr--text">ИП Савин Валентин Евгеньевич <br> ИНН 910310702794 <br> ОГРНИП 317910200014735</p>
+                            <p class="footer__regitr--text">© albomshkola 2023</p>
+                        </div>
+                        <div class="footer__links__polit">
+                            <a href="#" class="footer__link--a">Политика конфиденциальности</a>
+                            <a href="#" class="footer__link--a">Пользовательское соглашение</a>
+                        </div>
+                        <div class="footer__soc__netw">
+                            <a href="tel:+79551511122" class="footer__tel">+7 (955) 151-11-22</a>
+                            <div class="footer__messangers">
+                                <a href="#"><picture><source srcset="img/telegram__black.webp" type="image/webp"><img src="img/telegram__black.png" alt=""></picture></a>
+                                <a href="#"><picture><source srcset="img/vk__black.webp" type="image/webp"><img src="img/vk__black.png" alt=""></picture></a>
+                                <a href="#"><picture><source srcset="img/whatsapp.webp" type="image/webp"><img src="img/whatsapp.png" alt=""></picture></a>
+                            </div>
+                            <p class="footer__last--p">Напишите в мессенджеры</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="gPModal__block" id="gPModal__block">
+            <div class="gPModal-content">
+                <div class="modal-header">
+                    <h2 class="gPModal__title scndTitle">Общие фото</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="lightgallery gModal--lightgallery" id="lightgallery gModal--lightgallery">
+                        <a href="img/g01.jpg">
+                            <picture><source srcset="img/g01.webp" type="image/webp"><img src="img/g01.jpg" /></picture>
+                        </a>
+                        <a href="img/g02.jpg">
+                            <picture><source srcset="img/g02.webp" type="image/webp"><img src="img/g02.jpg" /></picture>
+                        </a>
+                        <a href="img/g03.jpg">
+                            <picture><source srcset="img/g03.webp" type="image/webp"><img src="img/g03.jpg" /></picture>
+                        </a>
+                        <a href="img/g04.jpg">
+                            <picture><source srcset="img/g04.webp" type="image/webp"><img src="img/g04.jpg" /></picture>
+                        </a>
+                        <a href="img/g05.jpg">
+                            <picture><source srcset="img/g05.webp" type="image/webp"><img src="img/g05.jpg" /></picture>
+                        </a>
+                        <a href="img/g06.jpg">
+                            <picture><source srcset="img/g06.webp" type="image/webp"><img src="img/g06.jpg" /></picture>
+                        </a>
+                        <a href="img/g07.jpg">
+                            <picture><source srcset="img/g07.webp" type="image/webp"><img src="img/g07.jpg" /></picture>
+                        </a>
+                        <a href="img/g08.jpg">
+                            <picture><source srcset="img/g08.webp" type="image/webp"><img src="img/g08.jpg" /></picture>
+                        </a>
+                        <a href="img/g09.jpg">
+                            <picture><source srcset="img/g09.webp" type="image/webp"><img src="img/g09.jpg" /></picture>
+                        </a>
+                        <a href="img/g10.jpg">
+                            <picture><source srcset="img/g10.webp" type="image/webp"><img src="img/g10.jpg" /></picture>
+                        </a>
+                        <a href="img/g11.jpg">
+                            <picture><source srcset="img/g11.webp" type="image/webp"><img src="img/g11.jpg" /></picture>
+                        </a>
+                        <a href="img/g12.jpg">
+                            <picture><source srcset="img/g12.webp" type="image/webp"><img src="img/g12.jpg" /></picture>
+                        </a>
+                        <a href="img/g13.jpg">
+                            <picture><source srcset="img/g13.webp" type="image/webp"><img src="img/g13.jpg" /></picture>
+                        </a>
+                        <a href="img/g14.jpg">
+                            <picture><source srcset="img/g14.webp" type="image/webp"><img src="img/g14.jpg" /></picture>
+                        </a>
+                        <a href="img/g15.jpg">
+                            <picture><source srcset="img/g15.webp" type="image/webp"><img src="img/g15.jpg" /></picture>
+                        </a>
+                        <a href="img/g16.jpg">
+                            <picture><source srcset="img/g16.webp" type="image/webp"><img src="img/g16.jpg" /></picture>
+                        </a>
+                        <a href="img/g17.jpg">
+                            <picture><source srcset="img/g17.webp" type="image/webp"><img src="img/g17.jpg" /></picture>
+                        </a>
+                        <a href="img/g18.jpg">
+                            <picture><source srcset="img/g18.webp" type="image/webp"><img src="img/g18.jpg" /></picture>
+                        </a>
+                        <a href="img/g19.jpg">
+                            <picture><source srcset="img/g19.webp" type="image/webp"><img src="img/g19.jpg" /></picture>
+                        </a>
+                        <a href="img/g20.jpg">
+                            <picture><source srcset="img/g20.webp" type="image/webp"><img src="img/g20.jpg" /></picture>
+                        </a>
+                        <a href="img/g21.jpg">
+                            <picture><source srcset="img/g21.webp" type="image/webp"><img src="img/g21.jpg" /></picture>
+                        </a>
+                    
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="gApres__modal__sides">
+                        <div class="gApres__L__side">
+                            <h2 class="gApres__mainTitle scndTitle"><span>Получите презентацию <br> альбомов </span>и обсудите <br> в родительском <br> или в классном чате</h2>
+                            <p class="gApres__L__side--text">Выберите куда отправить?</p>
+                            <div class="gApres__L__side__soc__block">
+                                <a href="#"><picture><source srcset="img/telegramPopup.webp" type="image/webp"><img src="img/telegramPopup.jpg" alt=""></picture></a>
+                                <a href="#"><picture><source srcset="img/vkPopup.webp" type="image/webp"><img src="img/vkPopup.jpg" alt=""></picture></a>
+                                <a href="#"><picture><source srcset="img/whatsappPopup.webp" type="image/webp"><img src="img/whatsappPopup.jpg" alt=""></picture></a>
+                            </div>
+                            <form class="gApres__Form" method="post">
+                                <input class="gApres__Form--input" placeholder="Введите имя аккаунта или телефон" type="text" value#="">
+                                <input type="submit" class="gApres__Form--submit openThanksModal" value="Получить презентацию альбомов">
+                            </form>
+                        </div>
+                        <div class="gApres__R__side">
+                            <p class="gApres__R--subtitle">Придет pdf файл, <br> в нем будет</p>
+                            <ul class="gApres__R--lists">
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Варианты дизайна фотокниги</li>
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Подробное описание</li>
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Варианты разворотов</li>
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Стоимость каждого варианта</li>
+                            </ul>
+                            <div class="gApres__R--info">
+                                <p class="gApres__R--text">При бронировании съемки</p>
+                                <p class="gApres__R--text__Grad">до<span> 20 марта 2023</span></p>
+                                <p class="gApres__R--subtitle__bold">аренда студии в альбом <br> учителю в подарок</p>
+                                <p class="gApres__R__side--lastP">Или получите <br> консультацию по телефону</p>
+                                <a href="tel:+79951511122" class="gApres__L__side--tel">+7 (995) 151-11-22</a>
+                            </div>
+                        </div>
+                    </div>
+                    <picture><source srcset="img/gApresetModalClose.webp" type="image/webp"><img src="img/gApresetModalClose.png" alt="" class="gModalclose" id="gModalclose"></picture>              
+                </div>
+            </div>
+        </div>
+
+        <div class="portModal" id="portModal">
+            <div class="pModal-content">
+                <div class="pModal-header">
+                    <h2 class="pModal__title scndTitle">Портретные фото</h2>
+                </div>
+                <div class="pModal-body">
+                    <div class="lightgallery pModal--lightgallery" id="lightgallery pModal--lightgallery">
+                        <a href="img/port01.jpg">
+                            <picture><source srcset="img/port01.webp" type="image/webp"><img src="img/port01.jpg" /></picture>
+                        </a>
+                        <a href="img/port02.jpg">
+                            <picture><source srcset="img/port02.webp" type="image/webp"><img src="img/port02.jpg" /></picture>
+                        </a>
+                        <a href="img/port03.jpg">
+                            <picture><source srcset="img/port03.webp" type="image/webp"><img src="img/port03.jpg" /></picture>
+                        </a>
+                        <a href="img/port04.jpg">
+                            <picture><source srcset="img/port04.webp" type="image/webp"><img src="img/port04.jpg" /></picture>
+                        </a>
+                        <a href="img/port05.jpg">
+                            <picture><source srcset="img/port05.webp" type="image/webp"><img src="img/port05.jpg" /></picture>
+                        </a>
+                        <a href="img/port06.jpg">
+                            <picture><source srcset="img/port06.webp" type="image/webp"><img src="img/port06.jpg" /></picture>
+                        </a>
+                        <a href="img/port07.jpg">
+                            <picture><source srcset="img/port07.webp" type="image/webp"><img src="img/port07.jpg" /></picture>
+                        </a>
+                        <a href="img/port08.jpg">
+                            <picture><source srcset="img/port08.webp" type="image/webp"><img src="img/port08.jpg" /></picture>
+                        </a>
+                        <a href="img/port09.jpg">
+                            <picture><source srcset="img/port09.webp" type="image/webp"><img src="img/port09.jpg" /></picture>
+                        </a>
+                        <a href="img/port10.jpg">
+                            <picture><source srcset="img/port10.webp" type="image/webp"><img src="img/port10.jpg" /></picture>
+                        </a>
+                        <a href="img/port11.jpg">
+                            <picture><source srcset="img/port11.webp" type="image/webp"><img src="img/port11.jpg" /></picture>
+                        </a>
+                        <a href="img/port12.jpg">
+                            <picture><source srcset="img/port12.webp" type="image/webp"><img src="img/port12.jpg" /></picture>
+                        </a>
+                        <a href="img/port13.jpg">
+                            <picture><source srcset="img/port13.webp" type="image/webp"><img src="img/port13.jpg" /></picture>
+                        </a>
+                        <a href="img/port14.jpg">
+                            <picture><source srcset="img/port14.webp" type="image/webp"><img src="img/port14.jpg" /></picture>
+                        </a>
+                        <a href="img/port15.jpg">
+                            <picture><source srcset="img/port15.webp" type="image/webp"><img src="img/port15.jpg" /></picture>
+                        </a>
+                        <a href="img/port16.jpg">
+                            <picture><source srcset="img/port16.webp" type="image/webp"><img src="img/port16.jpg" /></picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="pModal-footer">
+                    <div class="gApres__modal__sides">
+                        <div class="gApres__L__side">
+                            <h2 class="gApres__mainTitle scndTitle"><span>Получите презентацию <br> альбомов </span>и обсудите <br> в родительском <br> или в классном чате</h2>
+                            <p class="gApres__L__side--text">Выберите куда отправить?</p>
+                            <div class="gApres__L__side__soc__block">
+                                <a href="#"><picture><source srcset="img/telegramPopup.webp" type="image/webp"><img src="img/telegramPopup.jpg" alt=""></picture></a>
+                                <a href="#"><picture><source srcset="img/vkPopup.webp" type="image/webp"><img src="img/vkPopup.jpg" alt=""></picture></a>
+                                <a href="#"><picture><source srcset="img/whatsappPopup.webp" type="image/webp"><img src="img/whatsappPopup.jpg" alt=""></picture></a>
+                            </div>
+                            <form class="gApres__Form" method="post">
+                                <input class="gApres__Form--input" placeholder="Введите имя аккаунта или телефон" type="text" value#="">
+                                <input type="submit" class="gApres__Form--submit openThanksModal03" value="Получить презентацию альбомов">
+                            </form>
+                        </div>
+                        <div class="gApres__R__side">
+                            <p class="gApres__R--subtitle">Придет pdf файл, <br> в нем будет</p>
+                            <ul class="gApres__R--lists">
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Варианты дизайна фотокниги</li>
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Подробное описание</li>
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Варианты разворотов</li>
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Стоимость каждого варианта</li>
+                            </ul>
+                            <div class="gApres__R--info">
+                                <p class="gApres__R--text">При бронировании съемки</p>
+                                <p class="gApres__R--text__Grad">до<span> 20 марта 2023</span></p>
+                                <p class="gApres__R--subtitle__bold">аренда студии в альбом <br> учителю в подарок</p>
+                                <p class="gApres__R__side--lastP">Или получите <br> консультацию по телефону</p>
+                                <a href="tel:+79951511122" class="gApres__L__side--tel">+7 (995) 151-11-22</a>
+                            </div>
+                        </div>
+                    </div>
+                    <picture><source srcset="img/gApresetModalClose.webp" type="image/webp"><img src="img/gApresetModalClose.png" alt="" class="pModalclose" id="pModalclose"></picture>        
+                </div>
+            </div>
+        </div>
+
+        <div class="getaPresentModal" id="getaPresentModal">
+            <div class="gApres--content">
+                <div class="gApres__modal--body">
+                    <div class="gApres__modal__sides">
+                        <div class="gApres__L__side">
+                            <h2 class="gApres__mainTitle scndTitle"><span>Получите презентацию <br> альбомов </span>и обсудите <br> в родительском <br> или в классном чате</h2>
+                            <p class="gApres__L__side--text">Выберите куда отправить?</p>
+                            <div class="gApres__L__side__soc__block">
+                                <a href="#"><picture><source srcset="img/telegramPopup.webp" type="image/webp"><img src="img/telegramPopup.jpg" alt=""></picture></a>
+                                <a href="#"><picture><source srcset="img/vkPopup.webp" type="image/webp"><img src="img/vkPopup.jpg" alt=""></picture></a>
+                                <a href="#"><picture><source srcset="img/whatsappPopup.webp" type="image/webp"><img src="img/whatsappPopup.jpg" alt=""></picture></a>
+                            </div>
+                            <form class="gApres__Form" method="post">
+                                <input class="gApres__Form--input" placeholder="Введите имя аккаунта или телефон" type="text" value#="">
+                                <input type="submit" class="gApres__Form--submit openThanksModal02" value="Получить презентацию альбомов">
+                            </form>
+                        </div>
+                        <div class="gApres__R__side">
+                            <p class="gApres__R--subtitle">Придет pdf файл, <br> в нем будет</p>
+                            <ul class="gApres__R--lists">
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Варианты дизайна фотокниги</li>
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Подробное описание</li>
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Варианты разворотов</li>
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Стоимость каждого варианта</li>
+                            </ul>
+                            <div class="gApres__R--info">
+                                <p class="gApres__R--text">При бронировании съемки</p>
+                                <p class="gApres__R--text__Grad">до<span> 20 марта 2023</span></p>
+                                <p class="gApres__R--subtitle__bold">аренда студии в альбом <br> учителю в подарок</p>
+                                <p class="gApres__R__side--lastP">Или получите <br> консультацию по телефону</p>
+                                <a href="tel:+79951511122" class="gApres__L__side--tel">+7 (995) 151-11-22</a>
+                            </div>
+                        </div>
+                    </div>
+                    <picture><source srcset="img/gApresetModalClose.webp" type="image/webp"><img src="img/gApresetModalClose.png" alt="" class="gApresentClose" id="gApresentClose"></picture>
+                </div>
+                <div class="gApres__modal--footer"></div>
+            </div>
+        </div>
+
+        <div class="includedInThePrice" id="includedInThePrice">
+            <div class="incld__Price--content">
+                <div class="incldprice--header">
+                    <h2 class="incldprice__header--title scndTitle">
+                        Что входит в стоимость
+                    </h2>
+                </div>
+                <div class="incldprice--body">
+                    <ul class="incldprice--lists">
+                        <li class="incldprice--list">Фотографирование класса, учителей в школе или студии</li>
+                        <li class="incldprice--list">Обложка с твердой обложкой и толстыми страницами</li>
+                        <li class="incldprice--list">Предвадительный макет</li>
+                        <li class="incldprice--list">Печать альбомов</li>
+                        <li class="incldprice--list">Цветокоррекция и ретушь всех фото</li>
+                        <li class="incldprice--list">Все в электронном виде</li>
+                        <li class="incldprice--list">Доставка</li>
+                    </ul>
+
+                </div>
+                <div class="incldprice--footer">
+                    <picture><source srcset="img/gApresetModalClose.webp" type="image/webp"><img src="img/gApresetModalClose.png" alt="" class="incldModalClose" id="incldModalClose"></picture>
+                </div>
+            </div>
+        </div>
+
+        <div class="watchVideoModal" id="watchVideoModal">
+            <div class="watchVideoModal--content">
+                <div class="wchVidM--header">
+                </div>
+                <div class="wchVidM--body">
+                    <div class="wchVidM--sides">
+                        <div class="wchVidm__L__side">
+                            <h2 class="wchVidm__L--title">Смотрите видео презентацию</h2>
+                            <video id="albomReview__video" playsinline controls  class="albomReview__video" width="480" height="320">
+                                <source src="/video/albomReview.mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+
+                        <div class="wchVidM__R__side">
+                            <h2 class="wchVidm__R--title">Запишитесь на живую <br> онлайн консультацию</h2>
+                            <form action="" class="wchVidm__R--form">
+                                <input class="wchVidm__R--tel" type="text" placeholder="Введите телефон">
+                                <input class="wchVidm__R--btn openThanksModal06" type="submit" value="Записаться на живую онлайн консультацию">
+                                <label class="wchVidm__R--label">
+                                    <input type="checkbox" name="" id="wchVidm__R--chekbox" class="wchVidm__R--chekbox">
+                                    <p class="wchVidm__R__label--p">Нажимая на кнопку, вы соглашайтесь с Пользовательским соглашением</p>
+                                </label>
+                            </form>
+                            <p class="wchVidm__R--text">
+                                или напишите в мессенджер
+                            </p>
+                            <div class="wchVidm__R---messangers">
+                                <a href="#" class="wchVidm__R__M--item"><picture><source srcset="img/vk__black.webp" type="image/webp"><img src="img/vk__black.png" class="wchVidm__img"></picture></a>
+                                <a href="#" class="wchVidm__R__M--item"><picture><source srcset="img/whatsapp.webp" type="image/webp"><img src="img/whatsapp.png" class="wchVidm__img"></picture></a>
+                                <a href="#" class="wchVidm__R__M--item"><picture><source srcset="img/telegram__black.webp" type="image/webp"><img src="img/telegram__black.png" class="wchVidm__img"></picture></a>
+                                <a href="tel:+79551511122" class="wchVidm__R__M--item wchVidm__R__M--tel">+7 (955) 151-11-22</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wchVidM--footer">
+                    <picture><source srcset="img/gApresetModalClose.webp" type="image/webp"><img src="img/gApresetModalClose.png" alt="" class="wchVidMClose" id="wchVidMClose"></picture>
+                </div>
+            </div>
+        </div>
+
+        <div class="SeeMorePhotosModal" id="SeeMorePhotosModal">
+            <div class="sMPhM--content">
+                <div class="sMPhM--header">
+
+                </div>
+                <div class="sMPhM--body">
+                    <div class="lightgallery sMPhM--lightgallery" id="lightgallery sMPhM--lightgallery">
+                        <a href="img/g01.jpg">
+                            <picture><source srcset="img/g01.webp" type="image/webp"><img src="img/g01.jpg" /></picture>
+                        </a>
+                        <a href="img/g02.jpg">
+                            <picture><source srcset="img/g02.webp" type="image/webp"><img src="img/g02.jpg" /></picture>
+                        </a>
+                        <a href="img/g03.jpg">
+                            <picture><source srcset="img/g03.webp" type="image/webp"><img src="img/g03.jpg" /></picture>
+                        </a>
+                        <a href="img/g04.jpg">
+                            <picture><source srcset="img/g04.webp" type="image/webp"><img src="img/g04.jpg" /></picture>
+                        </a>
+                        <a href="img/g05.jpg">
+                            <picture><source srcset="img/g05.webp" type="image/webp"><img src="img/g05.jpg" /></picture>
+                        </a>
+                        <a href="img/g06.jpg">
+                            <picture><source srcset="img/g06.webp" type="image/webp"><img src="img/g06.jpg" /></picture>
+                        </a>
+                        <a href="img/g07.jpg">
+                            <picture><source srcset="img/g07.webp" type="image/webp"><img src="img/g07.jpg" /></picture>
+                        </a>
+                        <a href="img/g08.jpg">
+                            <picture><source srcset="img/g08.webp" type="image/webp"><img src="img/g08.jpg" /></picture>
+                        </a>
+                        <a href="img/g09.jpg">
+                            <picture><source srcset="img/g09.webp" type="image/webp"><img src="img/g09.jpg" /></picture>
+                        </a>
+                        <a href="img/g10.jpg">
+                            <picture><source srcset="img/g10.webp" type="image/webp"><img src="img/g10.jpg" /></picture>
+                        </a>
+                        <a href="img/g11.jpg">
+                            <picture><source srcset="img/g11.webp" type="image/webp"><img src="img/g11.jpg" /></picture>
+                        </a>
+                        <a href="img/g12.jpg">
+                            <picture><source srcset="img/g12.webp" type="image/webp"><img src="img/g12.jpg" /></picture>
+                        </a>
+                        <a href="img/g13.jpg">
+                            <picture><source srcset="img/g13.webp" type="image/webp"><img src="img/g13.jpg" /></picture>
+                        </a>
+                        <a href="img/g14.jpg">
+                            <picture><source srcset="img/g14.webp" type="image/webp"><img src="img/g14.jpg" /></picture>
+                        </a>
+                        <a href="img/g15.jpg">
+                            <picture><source srcset="img/g15.webp" type="image/webp"><img src="img/g15.jpg" /></picture>
+                        </a>
+                        <a href="img/g16.jpg">
+                            <picture><source srcset="img/g16.webp" type="image/webp"><img src="img/g16.jpg" /></picture>
+                        </a>
+                        <a href="img/g17.jpg">
+                            <picture><source srcset="img/g17.webp" type="image/webp"><img src="img/g17.jpg" /></picture>
+                        </a>
+                        <a href="img/g18.jpg">
+                            <picture><source srcset="img/g18.webp" type="image/webp"><img src="img/g18.jpg" /></picture>
+                        </a>
+                        <a href="img/g19.jpg">
+                            <picture><source srcset="img/g19.webp" type="image/webp"><img src="img/g19.jpg" /></picture>
+                        </a>
+                        <a href="img/g20.jpg">
+                            <picture><source srcset="img/g20.webp" type="image/webp"><img src="img/g20.jpg" /></picture>
+                        </a>
+                        <a href="img/g21.jpg">
+                            <picture><source srcset="img/g21.webp" type="image/webp"><img src="img/g21.jpg" /></picture>
+                        </a>
+                        <a href="img/port01.jpg">
+                            <picture><source srcset="img/port01.webp" type="image/webp"><img src="img/port01.jpg" /></picture>
+                        </a>
+                        <a href="img/port02.jpg">
+                            <picture><source srcset="img/port02.webp" type="image/webp"><img src="img/port02.jpg" /></picture>
+                        </a>
+                        <a href="img/port03.jpg">
+                            <picture><source srcset="img/port03.webp" type="image/webp"><img src="img/port03.jpg" /></picture>
+                        </a>
+                        <a href="img/port04.jpg">
+                            <picture><source srcset="img/port04.webp" type="image/webp"><img src="img/port04.jpg" /></picture>
+                        </a>
+                        <a href="img/port05.jpg">
+                            <picture><source srcset="img/port05.webp" type="image/webp"><img src="img/port05.jpg" /></picture>
+                        </a>
+                        <a href="img/port06.jpg">
+                            <picture><source srcset="img/port06.webp" type="image/webp"><img src="img/port06.jpg" /></picture>
+                        </a>
+                        <a href="img/port07.jpg">
+                            <picture><source srcset="img/port07.webp" type="image/webp"><img src="img/port07.jpg" /></picture>
+                        </a>
+                        <a href="img/port08.jpg">
+                            <picture><source srcset="img/port08.webp" type="image/webp"><img src="img/port08.jpg" /></picture>
+                        </a>
+                        <a href="img/port09.jpg">
+                            <picture><source srcset="img/port09.webp" type="image/webp"><img src="img/port09.jpg" /></picture>
+                        </a>
+                        <a href="img/port10.jpg">
+                            <picture><source srcset="img/port10.webp" type="image/webp"><img src="img/port10.jpg" /></picture>
+                        </a>
+                        <a href="img/port11.jpg">
+                            <picture><source srcset="img/port11.webp" type="image/webp"><img src="img/port11.jpg" /></picture>
+                        </a>
+                        <a href="img/port12.jpg">
+                            <picture><source srcset="img/port12.webp" type="image/webp"><img src="img/port12.jpg" /></picture>
+                        </a>
+                        <a href="img/port13.jpg">
+                            <picture><source srcset="img/port13.webp" type="image/webp"><img src="img/port13.jpg" /></picture>
+                        </a>
+                        <a href="img/port14.jpg">
+                            <picture><source srcset="img/port14.webp" type="image/webp"><img src="img/port14.jpg" /></picture>
+                        </a>
+                        <a href="img/port15.jpg">
+                            <picture><source srcset="img/port15.webp" type="image/webp"><img src="img/port15.jpg" /></picture>
+                        </a>
+                        <a href="img/port16.jpg">
+                            <picture><source srcset="img/port16.webp" type="image/webp"><img src="img/port16.jpg" /></picture>
+                        </a>
+                        <a href="img/glob06.jpg">
+                            <picture><source srcset="img/glob06.webp" type="image/webp"><img src="img/glob06.jpg" /></picture>
+                        </a>
+                        <a href="img/glob08.jpg">
+                            <picture><source srcset="img/glob08.webp" type="image/webp"><img src="img/glob08.jpg" /></picture>
+                        </a>
+                        <a href="img/glob14.jpg">
+                            <picture><source srcset="img/glob14.webp" type="image/webp"><img src="img/glob14.jpg" /></picture>
+                        </a>
+                        <a href="img/glob24.jpg">
+                            <picture><source srcset="img/glob24.webp" type="image/webp"><img src="img/glob24.jpg" /></picture>
+                        </a>
+                        <a href="img/glob54.jpg">
+                            <picture><source srcset="img/glob54.webp" type="image/webp"><img src="img/glob54.jpg" /></picture>
+                        </a>
+                        <a href="img/glob48.jpg">
+                            <picture><source srcset="img/glob48.webp" type="image/webp"><img src="img/glob48.jpg" /></picture>
+                        </a>
+                        
+                        <a href="img/glob58.jpg">
+                            <picture><source srcset="img/glob58.webp" type="image/webp"><img src="img/glob58.jpg" /></picture>
+                        </a>
+                        <a href="img/glob60.jpg">
+                            <picture><source srcset="img/glob60.webp" type="image/webp"><img src="img/glob60.jpg" /></picture>
+                        </a>
+                        <a href="img/glob61.jpg">
+                            <picture><source srcset="img/glob61.webp" type="image/webp"><img src="img/glob61.jpg" /></picture>
+                        </a>
+                        <a href="img/glob64.jpg">
+                            <picture><source srcset="img/glob64.webp" type="image/webp"><img src="img/glob64.jpg" /></picture>
+                        </a>
+                        <a href="img/glob66.jpg">
+                            <picture><source srcset="img/glob66.webp" type="image/webp"><img src="img/glob66.jpg" /></picture>
+                        </a>
+                        <a href="img/glob70.jpg">
+                            <picture><source srcset="img/glob70.webp" type="image/webp"><img src="img/glob70.jpg" /></picture>
+                        </a>
+                        <a href="img/glob76.jpg">
+                            <picture><source srcset="img/glob76.webp" type="image/webp"><img src="img/glob76.jpg" /></picture>
+                        </a>
+                        <a href="img/glob65.jpg">
+                            <picture><source srcset="img/glob65.webp" type="image/webp"><img src="img/glob65.jpg" /></picture>
+                        </a>
+                        <a href="img/glob04.jpg">
+                            <picture><source srcset="img/glob04.webp" type="image/webp"><img src="img/glob04.jpg" /></picture>
+                        </a>
+                        <a href="img/glob05.jpg">
+                            <picture><source srcset="img/glob05.webp" type="image/webp"><img src="img/glob05.jpg" /></picture>
+                        </a>
+                        <a href="img/glob07.jpg">
+                            <picture><source srcset="img/glob07.webp" type="image/webp"><img src="img/glob07.jpg" /></picture>
+                        </a>
+                        <a href="img/glob09.jpg">
+                            <picture><source srcset="img/glob09.webp" type="image/webp"><img src="img/glob09.jpg" /></picture>
+                        </a>
+                        <a href="img/glob11.jpg">
+                            <picture><source srcset="img/glob11.webp" type="image/webp"><img src="img/glob11.jpg" /></picture>
+                        </a>
+                        <a href="img/glob12.jpg">
+                            <picture><source srcset="img/glob12.webp" type="image/webp"><img src="img/glob12.jpg" /></picture>
+                        </a>
+                        <a href="img/glob13.jpg">
+                            <picture><source srcset="img/glob13.webp" type="image/webp"><img src="img/glob13.jpg" /></picture>
+                        </a>
+                        <a href="img/glob15.jpg">
+                            <picture><source srcset="img/glob15.webp" type="image/webp"><img src="img/glob15.jpg" /></picture>
+                        </a>
+                        <a href="img/glob16.jpg">
+                            <picture><source srcset="img/glob16.webp" type="image/webp"><img src="img/glob16.jpg" /></picture>
+                        </a>
+                        <a href="img/glob17.jpg">
+                            <picture><source srcset="img/glob17.webp" type="image/webp"><img src="img/glob17.jpg" /></picture>
+                        </a>
+                        <a href="img/glob22.jpg">
+                            <picture><source srcset="img/glob22.webp" type="image/webp"><img src="img/glob22.jpg" /></picture>
+                        </a>
+                        <a href="img/glob23.jpg">
+                            <picture><source srcset="img/glob23.webp" type="image/webp"><img src="img/glob23.jpg" /></picture>
+                        </a>
+                        <a href="img/glob26.jpg">
+                            <picture><source srcset="img/glob26.webp" type="image/webp"><img src="img/glob26.jpg" /></picture>
+                        </a>
+                        <a href="img/glob27.jpg">
+                            <picture><source srcset="img/glob27.webp" type="image/webp"><img src="img/glob27.jpg" /></picture>
+                        </a>
+                        <a href="img/glob29.jpg">
+                            <picture><source srcset="img/glob29.webp" type="image/webp"><img src="img/glob29.jpg" /></picture>
+                        </a>
+                        <a href="img/glob30.jpg">
+                            <picture><source srcset="img/glob30.webp" type="image/webp"><img src="img/glob30.jpg" /></picture>
+                        </a>
+                        <a href="img/glob31.jpg">
+                            <picture><source srcset="img/glob31.webp" type="image/webp"><img src="img/glob31.jpg" /></picture>
+                        </a>
+                        <a href="img/glob32.jpg">
+                            <picture><source srcset="img/glob32.webp" type="image/webp"><img src="img/glob32.jpg" /></picture>
+                        </a>
+                        <a href="img/glob33.jpg">
+                            <picture><source srcset="img/glob33.webp" type="image/webp"><img src="img/glob33.jpg" /></picture>
+                        </a>
+                        <a href="img/glob35.jpg">
+                            <picture><source srcset="img/glob35.webp" type="image/webp"><img src="img/glob35.jpg" /></picture>
+                        </a>
+                        <a href="img/glob36.jpg">
+                            <picture><source srcset="img/glob36.webp" type="image/webp"><img src="img/glob36.jpg" /></picture>
+                        </a>
+                        <a href="img/glob37.jpg">
+                            <picture><source srcset="img/glob37.webp" type="image/webp"><img src="img/glob37.jpg" /></picture>
+                        </a>
+                        <a href="img/glob38.jpg">
+                            <picture><source srcset="img/glob38.webp" type="image/webp"><img src="img/glob38.jpg" /></picture>
+                        </a>
+                        <a href="img/glob40.jpg">
+                            <picture><source srcset="img/glob40.webp" type="image/webp"><img src="img/glob40.jpg" /></picture>
+                        </a>
+                        <a href="img/glob41.jpg">
+                            <picture><source srcset="img/glob41.webp" type="image/webp"><img src="img/glob41.jpg" /></picture>
+                        </a>
+                        <a href="img/glob42.jpg">
+                            <picture><source srcset="img/glob42.webp" type="image/webp"><img src="img/glob42.jpg" /></picture>
+                        </a>
+                        <a href="img/glob44.jpg">
+                            <picture><source srcset="img/glob44.webp" type="image/webp"><img src="img/glob44.jpg" /></picture>
+                        </a>
+                        <a href="img/glob47.jpg">
+                            <picture><source srcset="img/glob47.webp" type="image/webp"><img src="img/glob47.jpg" /></picture>
+                        </a>
+                        <a href="img/glob56.jpg">
+                            <picture><source srcset="img/glob56.webp" type="image/webp"><img src="img/glob56.jpg" /></picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="sMPhM--footer">
+                    <div class="gApres__modal__sides">
+                        <div class="gApres__L__side">
+                            <h2 class="gApres__mainTitle scndTitle"><span>Получите презентацию <br> альбомов </span>и обсудите <br> в родительском <br> или в классном чате</h2>
+                            <p class="gApres__L__side--text">Выберите куда отправить?</p>
+                            <div class="gApres__L__side__soc__block">
+                                <a href="#"><picture><source srcset="img/telegramPopup.webp" type="image/webp"><img src="img/telegramPopup.jpg" alt=""></picture></a>
+                                <a href="#"><picture><source srcset="img/vkPopup.webp" type="image/webp"><img src="img/vkPopup.jpg" alt=""></picture></a>
+                                <a href="#"><picture><source srcset="img/whatsappPopup.webp" type="image/webp"><img src="img/whatsappPopup.jpg" alt=""></picture></a>
+                            </div>
+                            <form class="gApres__Form" method="post">
+                                <input class="gApres__Form--input" placeholder="Введите имя аккаунта или телефон" type="text" value#="">
+                                <input type="submit" class="gApres__Form--submit openThanksModal04" value="Получить презентацию альбомов">
+                            </form>
+                        </div>
+                        <div class="gApres__R__side">
+                            <p class="gApres__R--subtitle">Придет pdf файл, <br> в нем будет</p>
+                            <ul class="gApres__R--lists">
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Варианты дизайна фотокниги</li>
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Подробное описание</li>
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Варианты разворотов</li>
+                                <li><picture><source srcset="img/modalListDecor.webp" type="image/webp"><img src="img/modalListDecor.png" alt=""></picture> Стоимость каждого варианта</li>
+                            </ul>
+                            <div class="gApres__R--info">
+                                <p class="gApres__R--text">При бронировании съемки</p>
+                                <p class="gApres__R--text__Grad">до<span> 20 марта 2023</span></p>
+                                <p class="gApres__R--subtitle__bold">аренда студии в альбом <br> учителю в подарок</p>
+                                <p class="gApres__R__side--lastP">Или получите <br> консультацию по телефону</p>
+                                <a href="tel:+79951511122" class="gApres__L__side--tel">+7 (995) 151-11-22</a>
+                            </div>
+                        </div>
+                    </div>
+                    <picture><source srcset="img/gApresetModalClose.webp" type="image/webp"><img src="img/gApresetModalClose.png" alt="" class="sMPhMClose" id="sMPhMClose"></picture>
+                </div>
+            </div>
+        </div>
+
+        <div class="downloadVariant" id="downloadVariant">
+            <div class="dowVar--content">
+                <div class="dowVar__modal--body">
+                    <div class="dowVar__modal__sides">
+                        <div class="dowVar__L__side">
+                            <h2 class="dowVar__mainTitle scndTitle"><span>Скачайте другие варианты <br> готовых дизайнов</span></h2>
+                            <p class="dowVar__L__side--text">Выберите куда отправить?</p>
+                            <div action="POST" class="dowVar__L__side__soc__block">
+                                <a href="#"><picture><source srcset="img/telegramPopup.webp" type="image/webp"><img src="img/telegramPopup.jpg" alt=""></picture></a>
+                                <a href="#"><picture><source srcset="img/vkPopup.webp" type="image/webp"><img src="img/vkPopup.jpg" alt=""></picture></a>
+                                <a href="#"><picture><source srcset="img/whatsappPopup.webp" type="image/webp"><img src="img/whatsappPopup.jpg" alt=""></picture></a>
+                            </div>
+                            <form class="dowVar__Form" method="post">
+                                <input class="dowVar__Form--input" placeholder="Введите имя аккаунта или телефон" type="text" value#="">
+                                <input type="submit" class="dowVar__Form--submit openThanksModal05" value="Получить презентацию альбомов">
+                            </form>
+                            <p class="dowVar__text">Или получите консультацию по телефону</p>
+                            <a href="tel:+79951511122" class="dowVar__tel">+7 (995) 151-11-22</a>
+                        </div>
+                        <div class="dowVar__R__side">
+                            <picture><source srcset="./img/dowVar__R__img.webp" type="image/webp"><img class="dowVar__R__img" src="./img/dowVar__R__img.jpg" alt=""></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="dowVar__modal--footer">
+                    <picture><source srcset="img/gApresetModalClose.webp" type="image/webp"><img src="img/gApresetModalClose.png" alt="" class="dowVarClose" id="dowVarClose"></picture>
+                </div>
+            </div>
+        </div>
+
+        <div class="thankModal" id="thankModal">
+            <div class="thanks--content">
+                <div class="thanksM__header">
+                    <h2 class="thanksM__title scndTitle">
+                        Благодарим, файл с презентацией <br>
+                        будет отправлено в течении 10 минут
+                    </h2>
+                </div>
+                <div class="thanksM__body">
+                    <p class="thanksM__body__text">Если нужна консультация или живая презентация</p>
+                    <div class="thanks__Body--sides">
+                        <div class="thanks__Body__R--side">
+                            <p class="thB--p">
+                                Позвоните на телефон
+                            </p>
+                            <a href="tel:+79660313661" class="thB__R--tel"><picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture> +7(966) 031-36-61</a>
+                        </div>
+                        <div class="thB__L--side">
+                            <p class="thB--p">
+                                или позвоните через мессенджер
+                            </p>
+                            <div class="thB__Messengers">
+                                <a class="thB__LM__item" href="#"><picture><source srcset="img/telegramPopup.webp" type="image/webp"><img src="img/telegramPopup.jpg" alt=""></picture> Telegram</a>
+                                <a class="thB__LM__item" href="#"><picture><source srcset="img/whatsappPopup.webp" type="image/webp"><img src="img/whatsappPopup.jpg" alt=""></picture>Whatsapp</a>
+                                <a class="thB__LM__item" href="#"><picture><source srcset="img/viber.webp" type="image/webp"><img src="img/viber.png" alt=""></picture> Viber</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thanksM__footer">
+                    <picture><source srcset="img/gApresetModalClose.webp" type="image/webp"><img src="img/gApresetModalClose.png" alt="" class="thanksClose" id="thanksClose"></picture>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/cndk.beforeafter.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

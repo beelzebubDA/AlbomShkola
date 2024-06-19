@@ -1,0 +1,380 @@
+.individual__approaches{
+    font-family:'Montserrat', sans-serif;
+    .individual__appr__block{
+        background-color: #edf3f6;
+        border-radius: 20px;
+        padding-top: 14px;
+        padding-bottom: 95px;
+
+        @include xxs {
+            padding-bottom: 0;
+        }
+
+        .individual__appr__items{
+            display: flex;
+            flex-direction: column;
+            z-index: 2;
+
+            @include md {
+                gap: 150px 0;
+            }
+
+            @include xs {
+                gap:  60px 0;
+            }
+
+            .ind__item01{
+                position: relative;
+                margin-left: 170px;
+
+                @include xl {
+                    margin-left: 130px;
+                }
+
+                @include xs {
+                    margin-left: 50px;
+                }
+                
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 320px;
+                    height: 320px;
+                    top: 35px;
+                    left: -30px;
+                    border-radius: 50%;
+                    background-color: white;
+                    z-index: 1;
+
+                    @include xs {
+                        width: 160px;
+                        height: 160px;
+                        top: 20px;
+                        left: -35px;
+                    }
+
+                    @include xxs {
+                        width: 100px;
+                        height: 100px;
+                        top: 32px;
+                        left: 20px;
+                    }
+                }
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 320px;
+                    height: 320px;
+                    top: -80px;
+                    left: -120px;
+                    border-radius: 50%;
+                    background-color: linear-gradient(90deg, #b7def0, #f5cfe9);
+                    z-index: 2;
+
+                    @include xs {
+                        width: 120px;
+                        height: 120px;
+                        top: -39px;
+                        left: -46px;
+                    }
+
+                    @include xxs {
+                        width: 100px;
+                        height: 100px;
+                        top: -6px;
+                        left: -21px;
+                    }
+                }
+            }
+
+            .ind__item02{
+                flex-direction: row-reverse;
+                margin-right: 175px;
+                align-items: center !important;
+                position: relative;
+
+                @include xl {
+                    margin-right: 140px;
+                }
+
+                @include xs {
+                    margin-right: 50px;
+                }
+
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 340px;
+                    height: 285px;
+                    top: -40px;
+                    right: -5px;
+                    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                    background-color: white;
+                    z-index: 1;
+
+                    @include xs {
+                        width: 160px;
+                        height: 160px;
+                        top: 20px;
+                        right: 10px;
+                    }
+
+                    @include xxs {
+                        width: 100px;
+                        height: 100px;
+                        top: 20px;
+                        right: 24px;
+                    }
+                }
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 340px;
+                    height: 285px;
+                    top: -105px;
+                    right: -130px;
+                    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                    background-color: linear-gradient(90deg, #b7def0, #f5cfe9);
+                    z-index: 2;
+
+                    @include xs {
+                        width: 160px;
+                        height: 160px;
+                        top: -45px;
+                        right: -40px;
+                    }
+
+                    @include xxs {
+                        width: 100px;
+                        height: 100px;
+                        top: -20px;
+                        right: -23px;
+                    }
+                }
+
+                .ind__appr--texts{
+                    margin-left: 0;
+                    margin-right: 75px;
+                    align-items: flex-end;
+                    justify-content:start;
+                    text-align: end;
+
+                    @include xl {
+                        margin-right: 20px;
+                    }
+
+                    .ind__appr--p{
+                        margin-left: 0;
+                        margin-right: 75px;
+
+                        @include xl {
+                            margin-right: 40px;
+                        }
+
+                        @include sm {
+                            margin-right: 20px;
+                        }
+
+                        @include xs {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            .ind__item03{
+                margin-left: 190px;
+                position: relative;
+
+                @include xl {
+                    margin-left: 140px;
+                }
+
+                @include xs {
+                    margin-left: 50px;
+                }
+
+                img{
+                    position: absolute;
+                    display: block;
+                    width: 100px !important;
+                    bottom: -160px;
+                    left: 0;
+
+                    @include xs {
+                        width: 90px !important;
+                        bottom: 0;
+                    }
+
+                    @include xxs {
+                        width: 60px !important;
+                    }
+                }
+
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 260px;
+                    height: 260px;
+                    bottom: 10px;
+                    left: -50px;
+                    transform: rotate(40deg);
+                    background-color: white;
+                    z-index: 1;
+
+                    @include xs {
+                        width: 120px;
+                        height: 120px;
+                        bottom: 60px;
+                        left: 25px;
+                    }
+
+                    @include xxs {
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 260px;
+                    height: 260px;
+                    bottom: -70px;
+                    left: -80px;
+                    transform: rotate(40deg);
+                    background-color: linear-gradient(90deg, #b7def0, #f5cfe9);
+                    z-index: 2;
+
+                    @include xs {
+                        width: 120px;
+                        height: 120px;
+                        left: -18px;
+                        bottom: 140px;
+                    }
+
+                    @include xxs {
+                        width: 90px;
+                        height: 90px;
+                        left: -15px;
+                        bottom: 60px;
+                    }
+                }
+
+
+            }
+            .individual__appr--item{
+                display: flex;
+                align-items: center;
+                
+                picture{
+                    width: 100px;
+                    height: 250px;
+                    z-index: 3;
+
+                    @include xxs {
+                        height: 180px;
+                    }
+                }
+                
+                img{
+                    width: 100px;
+                    z-index: 3;
+
+                    @include xs {
+                        width: 90px !important;
+                    }
+
+                    @include xxs {
+                        width: 60px !important;
+                    }
+                }
+
+                .ind__appr--texts{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 35px 0;
+                    margin-left: 50px;
+                    z-index: 3;
+
+                    @include xl {
+                        margin-left:  30px;
+                    }
+
+                    @include md {
+                        gap: 20px 0;
+
+                        br {
+                            display: none;
+                        }
+                    }
+
+                    @include xxs {
+                        margin-left: 20px;
+                    }
+
+                    .ind__appr--title{
+                        font-family:'Montserrat', sans-serif;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        font-size: 24px;
+                        line-height: 30px;
+                        color: black;
+
+                        @include md {
+                            font-size: 18px;
+                        }
+
+                        @include sm {
+                            font-size: 16px;
+                        }
+
+                        @include xxs {
+                            font-size: 12px;
+                        }
+                        
+                    }
+
+                    .ind__appr--p{
+                        margin-left: 60px;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #505050;
+
+                        @include xl {
+                            margin-left: 40px;
+                        }
+
+                        @include md {
+                            font-size: 14px;
+                            width: 60%;
+                        }
+
+                        @include sm {
+                            font-size: 12px;
+                            margin-left: 20px;
+
+                            br {
+                                display: none;
+                            }
+                        }
+
+                        @include xs {
+                            width: 85%;
+                            margin-left: 10px;
+                        }
+
+                        @include xxs {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

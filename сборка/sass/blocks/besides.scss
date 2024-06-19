@@ -1,0 +1,247 @@
+.besides{
+    margin-top: 150px;
+    font-family:'Montserrat', sans-serif;
+
+    @include lg {
+        margin-top: 100px !important;
+    }
+
+    @include xxs {
+        margin-top: 50px !important;
+    }
+
+    .besides__block{
+        position: relative;
+
+        .besides__item__bg01 {
+            position: absolute;
+            top: 0;
+            left: -110px;
+
+
+            @include lg {
+                top: 50px;
+                left: -159px; 
+            }
+
+            @include md {
+                top: -38px;
+                left: 3%;
+            }
+
+            @include xs {
+                top: -78px;
+                left: -10%;
+            }
+        }
+
+        .besides__item__bg02 {
+            position: absolute;
+            top: -60px;
+            right: -120px;
+
+            @include lg {
+                top: 50px;
+                right: -160px;
+            }
+
+            @include md {
+                top: 26%;
+                right: 2%;
+            }
+
+            @include xs {
+                top: 21%;
+                right: -9%;
+            }
+        }
+
+        .besides__titles{
+            text-align: center;
+            margin-bottom: 55px;
+            display: flex;
+            flex-direction: column;
+            z-index: 2;
+
+            @include lg {
+                margin-bottom: 40px;
+            }
+
+            .besides__title{
+                margin-bottom: 35px;
+                font-size: 50px;
+                z-index: 2;
+
+                @include lg {
+                    margin-bottom: 25px;
+                }
+
+                @include xxs {
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .besides__waves{
+                width: 40%;
+                height: 5px;
+            }
+        }
+
+        .besides__items{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 0 150px;
+            position: relative;
+            margin-bottom: 120px;
+            margin-right: 60px;
+
+            @include xxl {
+                gap: 0 70px;
+            }
+
+            @include xl {
+                gap: 0 0;
+            }
+
+            @include md {
+                align-items: center;
+                gap: 50px 0;
+                margin-right: 0;
+            }
+
+            @include sm {
+                flex-direction: column;
+                margin-bottom: 60px;
+            }
+
+            .besides-item{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                z-index: 5;
+
+                .besides__item__title{
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                }
+
+                .besides__item__600--title{
+                    margin-top: 14px;
+                    margin-bottom: 0;
+                }
+
+                .besides__600__img{
+                    width: 100%;
+
+                    @include xl {
+                        width: 80%;
+                    }
+                }
+                
+
+                .besides__subtitle{
+                    margin-bottom: 0 !important;
+                }
+            }
+
+        }
+
+        .besides__sides{
+            display: flex;
+            justify-content: space-between;
+
+            @include md {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .besides__hand{
+                
+                @include xxs {
+                    width: 40%;
+                }
+            }
+
+            .besides__L__side--title{
+                 @include xl {
+                    font-size: 25px;
+                    margin-top: 40px;
+                 }
+
+                 @include md {
+                    // width: 100%;
+                 }
+
+                 @include xs {
+
+                 }
+            }
+
+            .besides__R__side{
+                .beside__R__side__block{
+                    background-color: linear-gradient(90deg, #3b8dff, #7ed5ff);
+                    padding: 94px 98px 80px 105px;
+                    border-radius: 50px;
+
+                    @include xl {
+                        padding: 83px 54px 86px 80px;
+                    }
+
+                    @include xxs {
+                        padding: 50px 15px 40px 10px
+                    }
+                    .beside__R__side--title{
+                        font-family:'Montserrat', sans-serif;
+                        font-size: 35px;
+                        line-height: 60px;
+                        font-weight: 700;
+                        color: white;
+                        text-transform: uppercase;
+
+                        span{
+                            font-size: 70px;
+                        }
+
+                        @include xl {
+                            font-size:  30px;
+                            line-height: 40px;
+
+                            span {
+                                font-size: 60px;
+                            }
+                        }
+
+                        @include xxs {
+                            font-size: 20px;
+                            line-height: 35px;
+
+                            span {
+                                font-size: 40px;
+                            }
+                        }
+                    }
+
+                    .beside__R__side--subtitle{
+                        font-size: 28px;
+                        line-height: 35px;
+                        letter-spacing: 10px;
+                        color: white;
+
+                        @include xl {
+                            font-size: 20px;
+                            line-height: 33px;
+                        }
+
+                        @include xxs {
+                            font-size: 16px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

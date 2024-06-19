@@ -1,0 +1,148 @@
+.thankModal{
+
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: linear-gradient(52deg, #94e6f4, #ffcde8);
+    font-family:'Montserrat', sans-serif;
+    z-index: 20;
+
+    .thanks--content{
+
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 75px 75px 65px 70px;
+        border: none;
+        width: 70%;
+        box-shadow: 0 0 1px 0 rgba(0,0,0,.2),0 -1px 10px 0 rgba(0,0,0,.10);
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        border-radius: 50px;
+        margin-top: 70px;
+        max-width: 1030px;
+
+        @include xl {
+            width: 90%;
+        }
+
+        @include xxs {
+            padding: 40px 30px 40px 30px;
+        }
+
+        .thanksM__header{
+            .thanksM__title{
+                text-align: center;
+                margin-top: 0;
+            }
+        }
+
+        .thanksM__body{
+            .thanksM__body__text{
+                font-size: 18px;
+                line-height: 26px;
+                padding-bottom: 50px;
+
+                @include sm {
+                    text-align: center;
+                    padding-bottom: 30px;
+                }
+            }
+
+            .thanks__Body--sides{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                @include sm {
+                    flex-direction: column;
+                    gap: 30px 0;
+                    text-align: center;
+                }
+                .thanks__Body__R--side{
+
+                    .thB__R--tel{
+                        text-decoration: none;
+                        font-weight: 700;
+                        color: black;
+                        font-size: 24px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding-top: 20px;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            margin-right: 20px;
+                        }
+
+                        @include xxs {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .thB__L--side{
+                    .thB__Messengers{
+                        display: flex;
+                        align-items: center;
+                        padding-top: 20px;
+                        gap: 0 20px;
+
+                        @include xxs {
+                            gap: 20px;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-items: start;
+                        }
+                        .thB__LM__item{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-decoration: none;
+                            color: black;
+                            font-weight: 400;
+
+                            &:last-child {
+                                img {
+                                    width: 35px;
+                                    height: 35px;
+                                }
+                            }
+
+                            img {
+                                width: 30px;
+                                height: 30px;
+                                margin-right: 20px;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .thB--p{
+
+            }
+        }
+        
+        .thanksM__footer{
+            .thanksClose{
+                position: absolute;
+                top: -25px;
+                right: -30px;
+                cursor: pointer;
+
+                @include sm {
+                    top: -45px;
+                    right: -10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.includedInThePrice{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: linear-gradient(52deg, #94e6f4, #ffcde8);
+    font-family:'Montserrat', sans-serif;
+
+    .incld__Price--content{
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        max-width: 750px;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        border-radius: 50px;
+        margin-top: 100px;
+        padding: 50px 100px;
+
+        @include sm {
+            width: 85%;
+        }
+
+        @include xs {
+            width: 75%;
+            padding: 30px 55px;
+        }
+
+        .incldprice--header{
+            .incldprice__header--title{
+                text-align: center;
+                margin-top: 25px;
+                margin-bottom: 30px;
+
+                @include xs {
+                    font-size: 18px;
+                    margin-top: 15px;
+                }
+
+                @include xxs {
+                    font-size: 16px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+
+            }
+        }
+
+        .incldprice--body{
+            .incldprice--lists{
+                display: flex;
+                flex-direction: column;
+                gap: 20px 0;
+
+                @include xxs {
+                    gap: 15px 0;
+                }
+                .incldprice--list{
+                    font-size: 18px;
+                    line-height: 26px;
+
+                    @include sm {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+
+                    @include xxs {
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
+        .incldprice--footer{
+
+            .incldModalClose{
+
+                position: absolute;
+                top: -25px;
+                right: -30px;
+                cursor: pointer;
+
+                @include sm {
+                    top: -45px;
+                    right: -10px;
+                }
+            }
+
+        }
+
+        @keyframes animatetop {
+            from {
+                top: -300px; opacity: 0;
+            }
+            to {
+                top: 0; opacity: 1;
+            }
+        }
+    }
+
+}

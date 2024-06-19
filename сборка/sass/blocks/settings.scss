@@ -1,0 +1,115 @@
+$mainbg: #ffffff;
+
+@font-face {
+    font-family:'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
+}
+
+*, ul, li, p, a, span {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $mainbg;
+    font-family:'Montserrat', sans-serif;
+    font-size: 400;
+}
+
+.wrapper{
+    overflow: hidden;
+}
+
+.mainbtn {
+    font-weight: 500;
+    font-size: 12px;
+    color: #ffffff;
+    border-radius: 30px;
+    background-color: #fe5a65;
+
+    &:hover{
+        box-shadow: 0px 9px 35px -17px red;
+    }
+}
+
+.mainTitle {
+    background-color: linear-gradient(90deg, #3b8dff, #7ed5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+
+    // @include lg {
+    //     font
+    // }
+}
+
+.scndTitle{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    margin-top: 55px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+
+    @include lg {
+        font-size: 22px;
+    }
+
+    @include md {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    @include sm {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    @include xs {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20p;
+
+        br {
+            display: none;
+        }
+    }
+
+    span{
+        font-family:'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+}
+
+.main__subtitle{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #505050;
+    margin-bottom: 47px;
+
+    span{
+        font-weight: 700;
+    }
+}
+
+.spanGrad{
+    display: block;
+    width: 140px;
+    height: 6px;
+    background-color: #3b8dff;
+    background-image: linear-gradient(90deg, #3b8dff, #7ed5ff);
+    border-radius: 3px;
+}

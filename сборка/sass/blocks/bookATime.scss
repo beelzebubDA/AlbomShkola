@@ -1,0 +1,173 @@
+.bookATime{
+    .bookATime__block{
+        font-family:'Montserrat', sans-serif;
+        font-weight: 400;
+        padding-bottom: 150px;
+
+        @include lg {
+            padding-bottom: 30px;
+        }
+
+        .bAt__head{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .bAt__main__subtitle{
+                margin-top: 25px;
+
+                @include xxs {
+                    margin-top: 15px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .bAt__waves{
+                width: 50%;
+                height: 10px;
+                margin-bottom: 35px;
+
+                @include xxs {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .bAt__clockImg{
+
+        }
+
+        .bAt__main__title{
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        .bAt__table{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .bAt__table__title{
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 25px;
+                color: #515151;
+                margin-bottom: 15px;
+            }
+
+            .bAt__table__block{
+                text-align: center;
+                border-collapse: collapse;
+                margin-bottom: 40px;
+
+                tr{
+
+                    border-bottom: 1px solid #515151;
+
+                    &:last-child{
+                        border-bottom: none;
+                    }
+
+                    th{
+                        padding: 35px;
+                        font-size: 18px;
+                        line-height: 25px;
+                        font-weight: 400;
+                        color: #515151;
+                        border-bottom: 3px solid #515151;
+
+                        @include sm {
+                            padding: 15px;
+                            font-size: 15px;
+                        }
+                    }
+
+                    td{
+                        padding: 35px;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #515151;
+
+                        @include sm {
+                            padding: 10px;
+                            font-size: 15px;
+                        }
+
+                        &:first-child{
+                            text-align: start;
+                        }
+
+                        span{
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            .bAt__table__sides{
+
+                display: flex;
+                gap: 0 70px;
+                align-items: center;
+
+                @include sm {
+                    gap: 20px 0px;
+                    flex-direction: column;
+                }
+
+                .bAt__T__L__side{
+                    .bAt__T__L--title{
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #515151;
+                        margin-bottom: 10px;
+                    }
+
+                    .bAt__T__L--GragTitle{
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 26px;
+                        background-color: linear-gradient(90deg, #3b8dff, #7ed5ff);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        margin-bottom: 15px;
+                    }
+
+                    .bAt__T__L--subtitle{
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        color: #515151;
+                    }
+                }
+
+                .bAt__T__R__side{
+                    .bAt__T__R--btn{
+                        display: inline-block;
+                        border-radius: 50px;
+                        padding: 25px 50px;
+                        text-decoration: none;
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        text-align: center;
+
+                        @include xxs {
+                            padding: 20px 40px;
+                        }
+
+                        span{
+                            font-weight: 400;
+                            text-transform: lowercase;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

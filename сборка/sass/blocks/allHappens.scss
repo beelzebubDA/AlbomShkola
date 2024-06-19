@@ -1,0 +1,175 @@
+.allHappens{
+    background-color: #ecf3f6;
+    .allHappens__block{
+        padding: 125px 0;
+        font-family:'Montserrat', sans-serif;
+
+        @include sm {
+            padding: 90px 0;
+        }
+
+        .allH__head{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .allH__title{
+                margin-top: 0;
+                margin-bottom: 0;
+                @include xs {
+                    text-align: center;
+                }
+            }
+    
+            .spanGrad{
+                margin: 25px 0 125px 0 ;
+
+                @include sm {
+                    margin: 20px 0 90px;
+                }
+
+                @include xs {
+                    margin: 20px 0 50px;
+                }
+            }
+        }
+
+        .allH__lines{
+            display: block;
+            width: 100%;
+            height: 6px;
+            background-color: #e9e3f4;
+            border-radius: 3px;
+            position: relative;
+            margin-bottom: 125px;
+
+            @include xs {
+                display: none;
+            }
+
+            &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 35px;
+                height: 35px;
+                left: 0;
+                bottom: -15px;
+                background: linear-gradient(52deg, #a6e2f2, #f9cee9);
+                border-radius: 25px;
+            }
+
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 35px;
+                height: 35px;
+                right: 0;
+                bottom: -15px;
+                background: linear-gradient(52deg, #f0c0d7, #addff0);
+                border-radius: 25px;
+            }
+        }
+
+        .allH__info__block{
+
+            display: flex;
+            justify-content: space-between;
+
+            @include xs {
+                flex-direction: column;
+                align-items: center;
+                gap: 50px 0;
+            }
+
+            .allH__I__item{
+
+                &:nth-child(n+3){
+                    text-align: end;
+                }
+
+                &:nth-child(2){
+                    position: relative;
+                    &::before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 80px;
+                        height: 80px;
+                        left: 0;
+                        top: -170px;
+                        background: linear-gradient(52deg, #8ba4f0, #bdeafe);
+                        border-radius: 50%;
+
+                        @include xs {
+                            display: none;
+                        }
+                    }
+                }
+
+                &:nth-child(3){
+                    position: relative;
+
+                    &::before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 60px;
+                        height: 60px;
+                        right: 0;
+                        top: -160px;
+                        background: linear-gradient(52deg, #a1b3f6, #e9cbfe);
+                        border-radius: 50%;
+
+                        @include xs {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .allH__I--title{
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 26px;
+                text-transform: uppercase;
+                margin-bottom: 25px;
+
+                @include sm {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+
+                @include xs {
+                    font-size: 20px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+            }
+
+            .allH__I--subtitle{
+                font-size: 15px;
+                line-height: 25px;
+                color: #515151;
+
+                @include sm {
+                    font-size: 10px;
+                    line-height: 25px;
+                }
+
+                @include xs {
+                    font-size: 16px;
+                    text-align: center;
+                }
+
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,162 @@
+.takePresent{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-bottom: 110px;
+    background-color: #f5f1f8;
+    padding-top: 10px;
+    .takePresent__block{
+        .take__Pres__sides{
+            padding: 75px 115px 50px 70px;
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            margin-bottom: 30px;
+
+            @include md {
+                padding: 60px 25px 30px 40px;
+            }
+
+            @include sm {
+                flex-direction: column;
+                padding: 50px 25px 40px 25px;
+            }
+
+            .take___Pres__L__side{
+
+                @include sm {
+                    margin-bottom: 60px;
+                }
+                .takePres__L--title{
+                    margin-top: 0;
+
+                    @include lg {
+                        font-size: 24px;
+                        line-height: 35px;
+                    }
+
+                    @include md {
+                        font-size: 20px;
+                        line-height: 32px;
+                    }
+                }
+                
+                .takePres__L__btn{
+                    padding: 25px 80px;
+                    position: absolute;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 30px;
+                    border-radius: 50px;
+
+                    @include lg {
+                        padding: 27px 40px;
+                    }
+
+                    @include md {
+                        padding: 20px 10px;
+                        font-size: 14px;
+                    }
+
+                    @include sm {
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .take__Pres__R__side{
+                position: relative;
+
+                .take__Pres__R__pngImg{
+                    position: absolute;
+                    left: -140px;
+                    top: -50px;
+
+                    @include lg {
+                        left: -110px;
+                    }
+
+                    @include md {
+                        top: -25px;
+                        left: -75px;
+                        width: 25%;
+                    }
+
+                    @include xxs {
+                        display: none;
+                    }
+                }
+
+                .take__Pres__R__subtitle{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #515151;
+                }
+
+                .take__Pres__R__list{
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #515151;
+                    list-style: none;
+                    margin-top: 30px;
+
+                    li{
+                        img{
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .take__Pres__end--texts{
+            text-align: end;
+            margin-right: 100px;
+
+            @include md {
+                margin-right: 5px;
+            }
+            .take__Pres__end--titles{
+                display: flex;
+                justify-content: flex-end;
+                gap: 0 8px;
+
+                @include xxs {
+                    flex-direction: column;
+                    gap: 5px 0;
+                    text-align: center;
+                }
+
+                .take__Pres__end--title{
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #515151;
+                }
+
+                .take__Pres__end--gradTitle{
+                    background: linear-gradient(90deg,#3b8dff,#7ed5ff);
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 26px;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+
+            .take__Pres__end--subtitle{
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 20px;
+                color: #515151;
+            }
+        }
+    }
+}

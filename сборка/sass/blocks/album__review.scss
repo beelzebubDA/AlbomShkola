@@ -1,0 +1,240 @@
+.album__review{
+    padding-bottom: 130px;
+
+    @include lg {
+        padding-bottom: 100px;
+    }
+
+    @include sm {
+        padding-bottom: 40px;
+    }
+    .album__rev__block{
+        margin-top: 85px;
+
+        @include lg {
+            margin-top: 50px;
+        }
+        .album__rev__sides{
+            display: flex;
+            gap: 0 75px;
+            align-items: flex-start;
+            margin-bottom: 75px;
+
+            @include lg {
+                margin-bottom:  40px;
+            }
+
+            @include md {
+                align-items: center;
+                flex-direction: column;
+                gap: 0 0;
+            }
+            .album__R__side{
+                display: flex;
+                flex-direction: column;
+                gap: 40px 0;
+                font-family:'Montserrat', sans-serif;
+                margin-top: 50px;
+
+                @include lg {
+                    margin-top: 20px;
+                    gap: 20px 0;
+                }
+                .album__R__side__block{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px 0;
+
+                    @include lg {
+                        gap: 20px 0;
+                    }
+                }
+                .album__R__side--top{
+                    display: flex;
+                    align-items: center;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 40px;
+                    text-transform: uppercase;
+
+                    @include lg {
+                        font-size: 14px;
+                        line-height: 28px;
+                    }
+
+                    .album__R__side--span{
+                        width: 45px !important;
+                        margin-right: 24px;
+                    }
+                }
+
+                .album__R__side--botom{
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #515151;
+
+                    @include lg {
+
+                        br {
+                            display: none;
+                        }
+                    }
+
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .album__sup__f__the__pres{
+            .album__sup--title{
+                margin-left: 100px;
+                margin-bottom: 40px;
+
+                @include lg {
+                    margin-left:  50px;
+                    margin-bottom:  20px;
+                }
+
+                @include xxs {
+                    margin-left: 0;
+                    font-size: 15px;
+                }
+            }
+
+            .album__sup__reg__block{
+                padding: 50px 0 75px 100px;
+                position: relative;
+                border-radius: 50px;
+                margin-bottom: 70px;
+                background: linear-gradient(90deg, #94e6f4, #ffcde8);
+
+                @include lg {
+                    margin-bottom: 30px;
+                }
+
+                @include md {
+                    padding: 50px 0 75px 55px;
+                }
+
+                @include sm {
+                    padding: 40px 0 38px 35px
+                }
+
+                .album__reg__block--subtitle{
+                    
+                    @include md {
+                        font-size: 16px;
+                        margin-bottom: 30px;
+                    }
+
+                    @include sm {
+                        font-size: 15px;
+                        margin-bottom: 25px;
+                    }
+                }
+
+                .album__reg__form{
+                    font-family:'Montserrat', sans-serif;
+                    .album__reg__input{
+                        padding: 30px 70px 25px 25px;
+                        width: 40%;
+                        outline: none;
+                        border: none;
+                        border-radius: 10px;
+                        font-size: 18px;
+
+                        @include sm {
+                            padding: 10px 18px 15px 15px;
+                            width: 90%;
+                        }
+                    }
+
+                    .album__reg__btn{
+                        position: absolute;
+                        bottom: -25px;
+                        left: 100px;
+                        padding: 30px 55px 25px 55px;
+                        text-decoration: none;
+                        border-radius: 35px;
+
+                        @include md {
+                            left: 55px;
+                            padding: 20px 40px 20px;
+                        }
+
+                        @include sm {
+                            left: 37px;
+                            padding: 13px 111px;
+                        }
+
+                        @include xxs {
+                            left: 35px;
+                            padding: 15px 32px;
+                        }
+                    }
+                }
+
+                .album__reg__block__man{
+                    position: absolute;
+                    right: 90px;
+                    bottom: 0;
+
+                    @include md {
+                        width: 30%;
+                        right: 28px;
+                    }
+
+                    @include sm {
+                        display: none;
+                    }
+                }
+            }
+
+            .album__sup__info__block{
+                font-family:'Montserrat', sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0 570px;
+
+                @include lg {
+                    gap: 0;
+                    justify-content: space-around;
+                }
+
+                p{
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    color: #515151;
+
+                    span{
+                        font-weight: 700;
+                        line-height: 40px;
+                        font-size: 28px;
+                        color: black;
+                    }
+                    @include md {
+                        font-size: 15px;
+
+                        span {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .album__sup__R--info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    @include sm {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.mini__block{
+    background-color: #54a8ff;
+    .mini__bl{
+        font-family:'Montserrat', sans-serif;
+        position: relative;
+        padding: 35px 0 40px 0;
+
+        .main__bl__bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+        .mini__bl__title{
+            font-size: 35px;
+            line-height: 60px;
+            color: white;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 2;
+
+            @include lg {
+                font-size: 25px;
+                line-height: 50px;
+            }
+
+            span{
+                font-size: 70px;
+
+                @include lg {
+                    font-size: 55px;
+                }
+
+                @include xxs {
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+}

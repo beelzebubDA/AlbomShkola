@@ -1,0 +1,114 @@
+// DExtra large devices | Desktops
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+// AExtra large devices | Desktops
+@mixin xxl {
+    @media (max-width: 1500px) {
+        @content;
+    }
+}
+
+@include xxl {
+    .container {
+        width: 1300px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}
+
+// Extra large devices | Desktops (≥75em)
+@mixin xl {
+
+    @media (max-width: 1340px) {
+        @content;
+    }
+}
+
+@include xl {
+    .container {
+        width: 1160px;
+        margin: 0 auto;
+    }
+}
+
+
+// Large devices | Desktops (≥62em)
+@mixin lg {
+
+    @media (max-width: 1170px) {
+        @content;
+    }
+}
+
+@include lg {
+    .container {
+        width: 1024px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}
+// Medium devices | Tablets (≥48em)
+@mixin md {
+
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@include md {
+    .container {      
+        max-width: 990px;
+        padding: 0 15px;      
+        width: 100%;
+    }
+}
+
+// Small devices | Landscape phones (≥34em)
+@mixin sm {
+    @media (max-width: 990px){
+        @content;
+    }
+}
+
+@include sm {
+    .container {
+        max-width: 750px;
+    }
+}
+
+// Extra small devices | Portrait phones (<34em : 22.5em)
+@mixin xs {
+    @media (max-width:750px) {
+        @content;
+    }
+}
+
+@include xs {
+    .container {
+        max-width: 505px;
+        padding: 0 10px;
+    }
+}
+
+@mixin xxs {
+    @media (max-width: 510px) {
+        @content;
+    }
+}
+
+@include xxs {
+    .container {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+// чтобы добавить поддиректорию
+@import "./blocks/settings.scss";
+@import "./blocks/*.scss";

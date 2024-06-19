@@ -1,0 +1,402 @@
+.SeeMorePhotosModal{
+
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: linear-gradient(52deg, #94e6f4, #ffcde8);
+    font-family:'Montserrat', sans-serif;
+
+    .sMPhM--content{
+
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        max-width: 1020px;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        border-radius: 50px;
+        margin-top: 100px;
+        padding: 50px 75px;
+
+        @include lg {
+            width: 95%;
+            margin-top: 80px;
+        }
+
+        @include xs {
+            padding: 50px 20px;
+        }
+
+        .sMPhM--header{
+
+        }
+
+        .sMPhM--body{
+            .sMPhM--lightgallery{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+
+                @include sm {
+                    flex-wrap: wrap;
+                    gap: 20px;
+                }
+
+                a{
+                    width: 25%;
+                    height: 100%;
+
+                    @include sm {
+                        width: 35%;
+                    }
+
+                    @include xs {
+                        width: 45%;
+                    }
+
+                    @include xxs {
+                        width: 90%;
+                    }
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .sMPhM--footer{
+
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+
+            .gApres__modal__sides{
+
+                display: flex;
+
+                @include md {
+                    justify-content: flex-start;
+                }
+
+                @include sm {
+                    flex-direction: column;
+                    gap: 20px 0;
+                }
+
+                .gApres__L__side{
+
+                    @include md {
+                        width: 60%;
+                    }
+
+                    @include sm {
+                        width: 100%;
+                    }
+
+                    .gApres__mainTitle{
+                        margin-top: 0;
+                        margin-bottom: 45px;
+
+                        @include sm {
+                            margin-bottom: 10px;
+                            text-align: center;
+
+                            br {
+                                display: none;
+                            }
+                        }
+
+                        @include xxs {
+                            font-size: 15px;
+                            line-height: 25px;
+                        }
+                    }
+
+                    .gApres__L__side--text{
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 20px;
+                        color: #515151;
+                        margin-bottom: 25px;
+
+                        @include sm {
+                            text-align: center;
+                        }
+                    }
+
+                    .gApres__L__side__soc__block{
+                        display: flex;
+                        gap: 0 30px;
+                        align-items: center;
+                        margin-bottom: 45px;
+
+                        @include xxl {
+                            margin-bottom: 17px;
+                        }
+
+                        @include sm {
+                            justify-content: center;
+                        }
+
+                        @include xs {
+                            margin-bottom: 15px;
+                            align-items: center;
+                            gap: 0 15px;
+                        }
+
+                    }
+
+                    .gApres__Form{
+
+                        @include sm {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .gApres__Form--input{
+                            width: 90%;
+                            height: 70px;
+                            padding-left: 15px;
+                            margin-bottom: 25px;
+                            border: 2px solid #515151;
+                            border-radius: 10px;
+                            line-height: 40px;
+                            font-size: 18px;
+                            outline: none;  
+
+                            @include xxl {
+                                width: 85%;
+                            }
+
+                            @include sm {
+                                width: 60%;
+                            }
+
+                            @include xs {
+                                margin-bottom: 15px;
+                                width: 80%;
+                            }
+
+                            @include xxs {
+                                line-height: 30px;
+                                font-size: 14px;
+                            }
+                        }
+
+                        .gApres__Form--submit{
+
+                            height: 75px;
+                            width: 90%;
+                            background-color: #fe5a65;
+                            border-radius: 35px;
+                            border: none;
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 30px;
+                            color: white;
+                            text-transform: uppercase;
+                            cursor: pointer;
+
+                            @include xxl {
+                                padding: 30px 0;
+                                width: 85%;
+                            }
+
+                            @include sm {
+                                width: 60%;
+                            }
+
+                            @include xs {
+                                font-size: 12px;
+                                line-height: 24px;
+                                width: 80%;
+                            }
+
+                            @include xxs {
+                                font-size: 10px;
+                                line-height: 14px;
+                            }
+                        }
+
+                    }
+                }
+
+                .gApres__R__side{
+                    margin-left: 30px;
+
+                    @include xxl {
+                        margin-left: 5px;
+                    }
+
+                    @include sm {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-left: 0;
+                        justify-content: center;
+                    }
+
+                    .gApres__R--subtitle{
+                        font-weight: 700;
+                        line-height: 25px;
+                        font-size: 18px;
+                        color: #515151;
+                        margin-bottom: 30px;
+
+                        @include sm {
+                            margin-bottom: 20px;
+                            margin-right: 40px;
+                        }
+
+                        @include xs {
+                            margin-right: 20px;
+                        }
+                    }
+
+                    .gApres__R--lists{
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px 0;
+                        margin-bottom: 55px;
+
+                        @include lg {
+                            margin-bottom: 30px;
+                        }
+
+                        @include sm {
+                            margin-bottom: 15px;
+                        }
+
+                        li {
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: #515151;
+
+                            img{
+                                width: 8px;
+                                height: 8px;
+                                object-fit: cover;
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+
+                    .gApres__R--info{
+                        margin-left: 0;
+
+                        @include xl {
+                            margin-left: 5px;
+                        }
+
+                        @include sm {
+                            text-align: center;
+                            width: 85%;
+                            margin-left: 0;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        @include xs {
+                            text-align: start;
+                        }
+
+                        .gApres__R--text{
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: #515151;
+                        }
+    
+                        .gApres__R--text__Grad{
+                            font-size: 15px;
+                            line-height: 25px;
+                            background-color: linear-gradient(52deg, #3b8dff 20%, #7ed5ff 50%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            margin: 5px 0 5px 0;
+    
+                            span{
+                                font-size: 18px;
+                                font-weight: 700;
+                                line-height: 26px;
+                            }
+                        }
+    
+                        .gApres__R--subtitle__bold{
+                            font-weight: 700;
+                            font-size: 15px;
+                            color: #515151;
+                            margin-bottom: 30px;
+
+                            @include sm {
+                                margin-bottom: 15px;
+                            }
+                        }
+    
+                        .gApres__R__side--lastP{
+                            line-height: 25px;
+                            font-size: 18px;
+                            color: #515151;
+                            margin-bottom: 15px;
+    
+                        }
+    
+                        .gApres__L__side--tel{
+                            font-weight: 700;
+                            line-height: 40px;
+                            font-size: 28px;
+                            color: black;
+                            text-decoration: none;
+                            letter-spacing: 1px;
+
+                            @include sm {
+                                line-height: 30px;
+                                font-size: 27px;
+                            }
+
+                            @include xxs {
+                                font-size: 22px;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .sMPhMClose{
+                position: absolute;
+                top: -25px;
+                right: -30px;
+                cursor: pointer;
+
+                @include lg {
+                    top: -45px;
+                    right: 20px;
+                }
+            }
+        }
+
+        @keyframes animatetop {
+            from {
+                top: -300px; opacity: 0;
+            }
+            to {
+                top: 0; opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,237 @@
+.manual__processing{
+    font-family:'Montserrat', sans-serif;
+    padding: 90px 0;
+    background-color: #f3f2f8;
+
+    @include md {
+        padding: 40px 0;
+    }
+
+    .man__proc__block{
+        .man__proc__sides{
+            display: flex;
+            gap: 0 100px;
+            align-items: flex-end;
+            margin-bottom: 25px;
+
+            @include lg {
+                gap: 0px 50px;
+            }
+
+            @include md {
+                flex-direction: column;
+                align-items: center;
+                gap: 50px 0;
+            }
+
+            .man__proc__L--side{
+                width: 50%;
+
+                @include md {
+                    width: 100%;
+                }
+                .man__proc__L--title{
+                    margin-top: 0;
+                    margin-bottom: 70px;
+                    position: relative;
+                    z-index: 2;
+
+                    @include xl {
+                        font-size: 25px;
+                        line-height: 35px;
+                        margin-bottom: 25px;
+                    }
+
+                    @include lg {
+                        font-size: 20px;
+                    }
+
+                    @include md {
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+                .man__proc__L__side--block{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 100px;
+                    gap: 0 60px;
+
+                    @include xl {
+                        margin-bottom: 50px;
+                    }
+
+                    @include md {
+                        margin-bottom: 0;
+                    }
+
+                    @include xxs {
+                        gap: 0 20px;
+                    }
+
+                    .man__proc__L__side__block--hand{
+                        display: block;
+                        position: relative;
+                        z-index: 2;
+
+                        @include xxs{
+                            width: 90%;
+                        }
+                    }
+
+                    .man__proc__L__side--p{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #505050;
+                        z-index: 2;
+                        position: relative;
+                    }
+
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        bottom: -30px;
+                        left: 0;
+                        width: 370px;
+                        height: 370px;
+                        border-radius: 50%;
+                        background-color: white;
+                        z-index: 1;
+
+                        @include lg {
+                            width: 300px;
+                            height: 300px;
+                        }
+
+                        @include md {
+                            width: 300px;
+                            height: 300px;
+                        }
+
+                        @include xxs {
+                            width: 250px;
+                            height: 250px;
+                            bottom: 50px;
+                        }
+                    }
+                }
+
+                .man__proc__text__and__grad{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    @include xs {
+                        margin-bottom: 20px;
+                    }
+
+                    .man__proc__L--p{
+                        font-weight: 500;
+                        font-style: italic;
+                        font-size: 15px;
+                        color: #505050;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px 0;
+                    }
+                }
+            }
+
+            .man__proc__R--side{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+
+                @include xl {
+                    text-align: center;
+                }           
+
+                .preview_content {
+                    width: 875px;
+                    height: 648px;
+
+                    @include xxl {
+                        width: 800px;
+                    }
+
+                    @include xl {
+                        width: 692px;
+                        height: 572.16px;
+                    }
+
+                    @include lg {
+                        width: 544px;
+                        height: 466.117px;
+                    }
+
+                    @include md {
+                        width: 850px;
+                        height: 617.148px;
+                    }
+
+                    @include sm {
+                        width: 730px;
+                        height: 600.887px;
+                    }
+
+                    @include xs {
+                        width: 500px !important;
+                        height: 430.809px !important;
+                    }
+
+                    @include xxs {
+                        width: 315px !important;
+                        height: 289.809px !important;
+                    }
+                }
+
+                .man__proc__R__text__and__grad{
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 0 35px;
+                        align-items: flex-start;
+                        margin-top: 40px;
+
+                    @include xl {
+                        align-items: flex-end;
+                    }
+
+                    @include md {
+                        gap: 0 50px;
+                    }
+
+                    @include xs {
+                        flex-direction: column;
+                        gap: 20px 0;
+                    }
+                    .man__proc__R__TAG--block{
+
+                        .man__proc__R--p{
+                            font-size: 14px;
+                            line-height: 40px;
+                            font-weight: 700;
+                            color: black;
+                            text-transform: uppercase;
+
+                            @include xl {
+                                font-size: 15px;
+                                line-height: 25px;
+                            }
+
+                            @include lg {
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

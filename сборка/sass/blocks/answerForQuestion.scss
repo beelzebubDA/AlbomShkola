@@ -1,0 +1,96 @@
+.answerForQuestion{
+    .aFquest__block{
+        padding-top: 150px;
+        padding-bottom: 160px;
+        font-family:'Montserrat', sans-serif;
+
+        @include sm {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        @include xxs {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .aFquest__titles{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .aFquest__mainTitle{
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+
+            .aFquest__mainSubtitle{
+                margin-top: 27px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .aFquest__soc__block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .aFquest__waves{
+                height: 4px;
+            }
+
+            .aFquest__messangers__block{
+                display: flex;
+                gap: 0 50px;
+                justify-content: center;
+                align-items: flex-end;
+                padding: 42px 0;
+
+                @include xxs {
+                    padding: 25px 0;
+                    gap: 20px 20px;
+                    flex-wrap: wrap;
+                }
+
+                .aFquest__M__item{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px 0;
+
+                    a{
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #505050;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .aFquest__soc__subtitle{
+                margin-top: 25px;
+                margin-bottom: 15px;
+                font-size: 18px;
+                line-height: 25px;
+                color: #505050;
+            }
+
+            .aFquest__soc__tel{
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 40px;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+    .linear__Gradient__footer{
+        height: 25px;
+        background: linear-gradient(52deg, #94e6f4 45%, #ffcde8 50%);
+    }
+}
